@@ -1,0 +1,120 @@
+<% /* %> for debugging
+<%
+    var moleculeName = 'Methane';
+    var molecule = {
+                "name": "Methane",
+                "isMeta": false,
+                "metaType": "Molecule",
+                "children": {
+                    "3": {
+                        "name": "H",
+                        "pos": [
+                            0,
+                            0.1,
+                            0.07
+                        ],
+                        "isMeta": false,
+                        "metaType": "Atom"
+                    },
+                    "k": {
+                        "name": "Bond",
+                        "isMeta": false,
+                        "metaType": "Bond",
+                        "src": "H",
+                        "dst": "C"
+                    },
+                    "o": {
+                        "name": "Bond",
+                        "isMeta": false,
+                        "metaType": "Bond",
+                        "src": "H",
+                        "dst": "C"
+                    },
+                    "t": {
+                        "name": "Bond",
+                        "isMeta": false,
+                        "metaType": "Bond",
+                        "src": "C",
+                        "dst": "H"
+                    },
+                    "A": {
+                        "name": "Bond",
+                        "isMeta": false,
+                        "metaType": "Bond",
+                        "src": "H",
+                        "dst": "C"
+                    },
+                    "F": {
+                        "name": "H",
+                        "pos": [
+                            -0.1,
+                            0,
+                            -0.07
+                        ],
+                        "isMeta": false,
+                        "metaType": "Atom"
+                    },
+                    "v": {
+                        "name": "H",
+                        "pos": [
+                            0,
+                            -0.1,
+                            0.07
+                        ],
+                        "isMeta": false,
+                        "metaType": "Atom"
+                    },
+                    "G": {
+                        "name": "C",
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "isMeta": false,
+                        "metaType": "Atom"
+                    },
+                    "O": {
+                        "name": "H",
+                        "pos": [
+                            0.1,
+                            0,
+                            -0.07
+                        ],
+                        "isMeta": false,
+                        "metaType": "Atom"
+                    }
+                }
+            };
+    var j = 0
+%><% */ %><% var j = 0 %>
+# -- ==methane== --
+
+import mbuild as mb
+
+
+class <%=molecule.name%>(mb.Compound):
+    def __init__(self):
+        super(<%=molecule.name%>, self).__init__()
+        <% for(var i in molecule.children) {%><%
+        if(molecule.children[i].metaType == 'Atom' && molecule.children[i].name == 'C')
+        {%>
+        self.add(mb.Particle(name='<%= molecule.children[i].name%>', pos=[<%= molecule.children[i].pos%>]))<%
+            } %><%
+        } %>
+        <% for(var i in molecule.children) {%><%
+        if(molecule.children[i].metaType == 'Atom' && molecule.children[i].name == 'H')
+        {%>
+        self.add(mb.Particle(name='<%= molecule.children[i].name%>', pos=[<%= molecule.children[i].pos%>]))<%
+            } %><%
+        } %>
+            
+        <% for(var i in molecule.children) {
+        if(molecule.children[i].metaType == 'Bond') {%>
+        self.add_bond((self[0], self[<%= ++j %>]))<% }
+        } %>
+        
+if __name__ == "__main__":
+    methane = Methane()
+    tempdir = methane.visualize(show_ports=True)
+    print(tempdir)

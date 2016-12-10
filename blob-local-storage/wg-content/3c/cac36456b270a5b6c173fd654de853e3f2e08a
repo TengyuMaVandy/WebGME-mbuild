@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"C","location":[-2.0729945537922845e-15,-4.199999999999998,-9.97465998686664e-16]},{"element":"H","location":[-1.0999999940395369,-4.1999999999999975,-3.103157577882443e-16]},{"element":"H","location":[1.0999999940395329,-4.199999999999998,-1.684616239585084e-15]},{"element":"C","location":[-1.0011684771786866e-15,-2.799999999999999,-4.758431671684181e-16]},{"element":"H","location":[-1.0999999940395357,-2.799999999999999,1.4008905983579145e-16]},{"element":"H","location":[1.0999999940395337,-2.799999999999999,-1.0917753941726275e-15]},{"element":"C","location":[-2.502662436207979e-16,-1.4000000000000001,-9.733502241825841e-17]},{"element":"H","location":[-1.0999999940395353,-1.4000000000000001,1.8256830548689914e-16]},{"element":"H","location":[1.0999999940395349,-1.4000000000000001,-3.772383503234157e-16]},{"element":"C","location":[0.0,0.0,0.0]},{"element":"H","location":[1.0699999332427979,0.0,0.0]},{"element":"H","location":[-0.35700008273124695,0.7690000534057617,0.6530000269412994]},{"element":"H","location":[-0.35700008273124695,0.18100008368492126,-0.9929999709129333]},{"element":"C","location":[-3.0531133177191805e-15,-5.599999999999997,-1.5092094240998222e-15]},{"element":"H","location":[-1.0699999332428007,-5.599999999999996,-7.883623421217969e-16]},{"element":"H","location":[0.3570000827312437,-6.369000053405759,0.6530000269412974]},{"element":"H","location":[0.3570000827312431,-5.781000083684918,-0.9929999709129355]}],"bonds":[{"atoms":[12,9],"order":1},{"atoms":[5,3],"order":1},{"atoms":[13,0],"order":1},{"atoms":[4,3],"order":1},{"atoms":[7,6],"order":1},{"atoms":[11,9],"order":1},{"atoms":[8,6],"order":1},{"atoms":[6,3],"order":1},{"atoms":[9,6],"order":1},{"atoms":[1,0],"order":1},{"atoms":[10,9],"order":1},{"atoms":[14,13],"order":1},{"atoms":[3,0],"order":1},{"atoms":[2,0],"order":1},{"atoms":[15,13],"order":1},{"atoms":[16,13],"order":1}],"name":"PolymerWithCap"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>

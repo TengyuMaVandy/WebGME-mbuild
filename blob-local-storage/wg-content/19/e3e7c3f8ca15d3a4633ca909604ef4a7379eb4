@@ -1,0 +1,76 @@
+{
+    "stateMachine": {
+        "name": "DeploymentProcess",
+        "initialState": "/a/F/s",
+        "finalStates": [
+            "/a/F/o",
+            "/a/F/m"
+        ],
+        "states": [
+            {
+                "id": "/a/F/o",
+                "name": "Deployed",
+                "transitions": []
+            },
+            {
+                "id": "/a/F/j",
+                "name": "Faliure",
+                "transitions": [
+                    {
+                        "targetId": "/a/F/m",
+                        "targetName": "NotDeployed",
+                        "event": "revert back to original version"
+                    }
+                ]
+            },
+            {
+                "id": "/a/F/s",
+                "name": "NewVersionIsReady",
+                "transitions": [
+                    {
+                        "targetId": "/a/F/e",
+                        "targetName": "InstallationComplete",
+                        "event": "npm install"
+                    },
+                    {
+                        "targetId": "/a/F/j",
+                        "targetName": "Faliure",
+                        "event": "npm install fails"
+                    }
+                ]
+            },
+            {
+                "id": "/a/F/e",
+                "name": "InstallationComplete",
+                "transitions": [
+                    {
+                        "targetId": "/a/F/O",
+                        "targetName": "LiveTested",
+                        "event": "testing succeeds"
+                    },
+                    {
+                        "targetId": "/a/F/j",
+                        "targetName": "Faliure",
+                        "event": "testing fails"
+                    }
+                ]
+            },
+            {
+                "id": "/a/F/m",
+                "name": "NotDeployed",
+                "transitions": []
+            },
+            {
+                "id": "/a/F/O",
+                "name": "LiveTested",
+                "transitions": [
+                    {
+                        "targetId": "/a/F/o",
+                        "targetName": "Deployed",
+                        "event": "users notified"
+                    }
+                ]
+            }
+        ]
+    }
+}

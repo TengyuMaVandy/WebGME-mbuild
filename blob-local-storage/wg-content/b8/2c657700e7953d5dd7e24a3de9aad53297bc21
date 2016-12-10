@@ -1,0 +1,99 @@
+
+var FSM = {};
+
+/**
+ * @param {function(string)} log - Out put goes here, e.g. console.log.
+ */
+FSM.Simulator = function (log) {
+    'use strict';
+    var finalStates = [],
+        self = this;
+
+    this.currentState = 'NewVersionIsReady';
+    this.currentStateId = '/a/F/s';
+    this.possibleEvents = [];
+    this.atEnd = false;
+
+    finalStates.push('/a/F/o');
+    finalStates.push('/a/F/m');
+
+    this.initialize = function () {
+        self.currentState = 'NewVersionIsReady';
+        self.currentStateId = '/a/F/s';
+        self.possibleEvents = [];
+        self.atEnd = false;
+        self.enterEvent();
+    };
+
+    this.enterEvent = function (currentInput) {
+        if (self.currentStateId === "/a/F/j") {
+            if (currentInput === 'revert back to original version') {
+                log('Switching state to NotDeployed (/a/F/m)');
+                self.currentStateId = '/a/F/m';
+                self.currentState = 'NotDeployed';
+                self.enterEvent();
+            } else {
+                self.possibleEvents = ["revert back to original version"];
+                log('Possible events for transition(s): "revert back to original version"');
+            }
+        } else if (self.currentStateId === "/a/F/s") {
+            if (currentInput === 'npm install') {
+                log('Switching state to InstallationComplete (/a/F/e)');
+                self.currentStateId = '/a/F/e';
+                self.currentState = 'InstallationComplete';
+                self.enterEvent();
+            } else if (currentInput === 'npm install fails') {
+                log('Switching state to Faliure (/a/F/j)');
+                self.currentStateId = '/a/F/j';
+                self.currentState = 'Faliure';
+                self.enterEvent();
+            } else {
+                self.possibleEvents = ["npm install", "npm install fails"];
+                log('Possible events for transition(s): "npm install", "npm install fails"');
+            }
+        } else if (self.currentStateId === "/a/F/e") {
+            if (currentInput === 'testing succeeds') {
+                log('Switching state to LiveTested (/a/F/O)');
+                self.currentStateId = '/a/F/O';
+                self.currentState = 'LiveTested';
+                self.enterEvent();
+            } else if (currentInput === 'testing fails') {
+                log('Switching state to Faliure (/a/F/j)');
+                self.currentStateId = '/a/F/j';
+                self.currentState = 'Faliure';
+                self.enterEvent();
+            } else {
+                self.possibleEvents = ["testing succeeds", "testing fails"];
+                log('Possible events for transition(s): "testing succeeds", "testing fails"');
+            }
+        } else if (self.currentStateId === "/a/F/O") {
+            if (currentInput === 'users notified') {
+                log('Switching state to Deployed (/a/F/o)');
+                self.currentStateId = '/a/F/o';
+                self.currentState = 'Deployed';
+                self.enterEvent();
+            } else {
+                self.possibleEvents = ["users notified"];
+                log('Possible events for transition(s): "users notified"');
+            }
+        }
+
+        if (currentInput === 'exit') {
+            self.atEnd = true;
+        } else if (finalStates.indexOf(self.currentStateId) !== -1) {
+            log('At a final state ' + self.currentState + '(' + self.currentStateId + ')');
+            self.atEnd = true;
+        }
+    };
+
+    this.getPossibleEvents = function () {
+        return self.possibleEvents;
+    };
+
+    this.getCurrentState = function () {
+        return {
+            id: self.currentStateId,
+            name: self.currentState
+        };
+    };
+};

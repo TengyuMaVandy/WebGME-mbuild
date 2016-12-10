@@ -1,0 +1,244 @@
+{
+    "name": "ROOT",
+    "children": {
+        "1": {
+            "name": "FCO",
+            "isMeta": true,
+            "metaType": "FCO",
+            "children": {}
+        },
+        "v": {
+            "name": "Example",
+            "isMeta": true,
+            "metaType": "Example",
+            "children": {
+                "j": {
+                    "name": "Atom",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom"
+                },
+                "C": {
+                    "name": "Copolymer",
+                    "length": 1,
+                    "isMeta": false,
+                    "metaType": "Copolymer",
+                    "children": {}
+                },
+                "p": {
+                    "name": "Molecule",
+                    "length": 0,
+                    "pos": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "isMeta": false,
+                    "metaType": "Molecule"
+                },
+                "z": {
+                    "name": "Polymer",
+                    "length": 1,
+                    "isMeta": false,
+                    "metaType": "Polymer",
+                    "children": {
+                        "g": {
+                            "name": "Ethane",
+                            "length": 1,
+                            "isMeta": false,
+                            "metaType": "Polymer",
+                            "children": {
+                                "N": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Up",
+                                    "dst": "Up"
+                                },
+                                "O": {
+                                    "name": "-CH3",
+                                    "length": 0,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                },
+                                "k": {
+                                    "name": "-CH3",
+                                    "length": 0,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                }
+                            }
+                        },
+                        "t": {
+                            "name": "CH3-CH2-CH3",
+                            "length": 1,
+                            "isMeta": false,
+                            "metaType": "Polymer",
+                            "children": {
+                                "0": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Up",
+                                    "dst": "Up"
+                                },
+                                "B": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Up",
+                                    "dst": "Down"
+                                },
+                                "s": {
+                                    "name": "-CH3",
+                                    "length": 0,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                },
+                                "x": {
+                                    "name": "-CH3",
+                                    "length": 0,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                },
+                                "K": {
+                                    "name": "-CH2-",
+                                    "length": 10,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                }
+                            }
+                        },
+                        "k": {
+                            "name": "CH3-CH2*n-",
+                            "length": 1,
+                            "isMeta": false,
+                            "metaType": "Polymer",
+                            "children": {
+                                "7": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Up",
+                                    "dst": "Down"
+                                },
+                                "K": {
+                                    "name": "-CH2-",
+                                    "length": 0,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                },
+                                "d": {
+                                    "name": "-CH3",
+                                    "length": 0,
+                                    "pos": [
+                                        null,
+                                        null,
+                                        null
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Molecule"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "u": {
+            "name": "Language",
+            "isMeta": true,
+            "metaType": "Language",
+            "children": {
+                "2": {
+                    "name": "Copolymer",
+                    "isMeta": true,
+                    "metaType": "Copolymer",
+                    "children": {}
+                },
+                "5": {
+                    "name": "Anchor",
+                    "isMeta": true,
+                    "metaType": "Anchor",
+                    "children": {}
+                },
+                "6": {
+                    "name": "Compound",
+                    "isMeta": true,
+                    "metaType": "Compound",
+                    "children": {}
+                },
+                "X": {
+                    "name": "Polymer",
+                    "isMeta": true,
+                    "metaType": "Polymer",
+                    "children": {}
+                },
+                "G": {
+                    "name": "Atom",
+                    "isMeta": true,
+                    "metaType": "Atom",
+                    "children": {}
+                },
+                "K": {
+                    "name": "Port",
+                    "isMeta": true,
+                    "metaType": "Port",
+                    "children": {}
+                },
+                "j": {
+                    "name": "Bond",
+                    "isMeta": true,
+                    "metaType": "Bond",
+                    "children": {}
+                },
+                "h": {
+                    "name": "Molecule",
+                    "isMeta": true,
+                    "metaType": "Molecule",
+                    "children": {}
+                },
+                "p": {
+                    "name": "Port2Port",
+                    "isMeta": true,
+                    "metaType": "Port2Port",
+                    "children": {}
+                }
+            }
+        }
+    }
+}

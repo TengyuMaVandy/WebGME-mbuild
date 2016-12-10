@@ -1,0 +1,47 @@
+
+var FSM = {};
+
+/**
+ * @param {function(string)} log - Out put goes here, e.g. console.log.
+ */
+FSM.Simulator = function (log) {
+    'use strict';
+    var finalStates = [],
+        self = this;
+
+    this.currentState = 'undefined';
+    this.currentStateId = 'null';
+    this.possibleEvents = [];
+    this.atEnd = false;
+
+
+    this.initialize = function () {
+        self.currentState = 'undefined';
+        self.currentStateId = 'null';
+        self.possibleEvents = [];
+        self.atEnd = false;
+        self.enterEvent();
+    };
+
+    this.enterEvent = function (currentInput) {
+
+
+        if (currentInput === 'exit') {
+            self.atEnd = true;
+        } else if (finalStates.indexOf(self.currentStateId) !== -1) {
+            log('At a final state ' + self.currentState + '(' + self.currentStateId + ')');
+            self.atEnd = true;
+        }
+    };
+
+    this.getPossibleEvents = function () {
+        return self.possibleEvents;
+    };
+
+    this.getCurrentState = function () {
+        return {
+            id: self.currentStateId,
+            name: self.currentState
+        };
+    };
+};

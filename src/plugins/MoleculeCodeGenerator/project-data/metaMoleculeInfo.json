@@ -1,0 +1,1396 @@
+{
+    "name": "ROOT",
+    "children": {
+        "1": {
+            "name": "FCO",
+            "isMeta": true,
+            "metaType": "FCO",
+            "children": {}
+        },
+        "v": {
+            "name": "Example",
+            "isMeta": true,
+            "metaType": "Example",
+            "children": {
+                "j": {
+                    "name": "Atom",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom"
+                },
+                "C": {
+                    "name": "Copolymer",
+                    "isMeta": false,
+                    "metaType": "Copolymer",
+                    "children": {
+                        "E": {
+                            "name": "CH3-CH2-Silane-CH3",
+                            "isMeta": false,
+                            "metaType": "Copolymer",
+                            "children": {
+                                "0": {
+                                    "name": "-CH3",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "0": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "6": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "8": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "9": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "x": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "l": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "M": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "w": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "g": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        }
+                                    }
+                                },
+                                "V": {
+                                    "name": "-Silane-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "3": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "S",
+                                            "dst": "Port"
+                                        },
+                                        "M": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "m": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "S",
+                                            "dst": "-OH"
+                                        },
+                                        "A": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "S",
+                                            "dst": "OH-"
+                                        },
+                                        "J": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "S",
+                                            "dst": "Port"
+                                        },
+                                        "U": {
+                                            "name": "S",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "c": {
+                                            "name": "OH-",
+                                            "isMeta": false,
+                                            "metaType": "Molecule",
+                                            "children": {
+                                                "9": {
+                                                    "name": "O",
+                                                    "pos": [
+                                                        0,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "isMeta": false,
+                                                    "metaType": "Atom"
+                                                },
+                                                "c": {
+                                                    "name": "H",
+                                                    "pos": [
+                                                        0,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "isMeta": false,
+                                                    "metaType": "Atom"
+                                                },
+                                                "J": {
+                                                    "name": "Port",
+                                                    "isMeta": false,
+                                                    "metaType": "Port",
+                                                    "children": {}
+                                                },
+                                                "B": {
+                                                    "name": "Bond",
+                                                    "isMeta": false,
+                                                    "metaType": "Bond",
+                                                    "src": "O",
+                                                    "dst": "H"
+                                                },
+                                                "v": {
+                                                    "name": "Bond",
+                                                    "isMeta": false,
+                                                    "metaType": "Bond",
+                                                    "src": "O",
+                                                    "dst": "Port"
+                                                }
+                                            }
+                                        },
+                                        "b": {
+                                            "name": "-OH",
+                                            "isMeta": false,
+                                            "metaType": "Molecule",
+                                            "children": {
+                                                "9": {
+                                                    "name": "O",
+                                                    "pos": [
+                                                        0,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "isMeta": false,
+                                                    "metaType": "Atom"
+                                                },
+                                                "c": {
+                                                    "name": "H",
+                                                    "pos": [
+                                                        0,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "isMeta": false,
+                                                    "metaType": "Atom"
+                                                },
+                                                "J": {
+                                                    "name": "Port",
+                                                    "isMeta": false,
+                                                    "metaType": "Port",
+                                                    "children": {}
+                                                },
+                                                "B": {
+                                                    "name": "Bond",
+                                                    "isMeta": false,
+                                                    "metaType": "Bond",
+                                                    "src": "O",
+                                                    "dst": "H"
+                                                },
+                                                "v": {
+                                                    "name": "Bond",
+                                                    "isMeta": false,
+                                                    "metaType": "Bond",
+                                                    "src": "O",
+                                                    "dst": "Port"
+                                                }
+                                            }
+                                        },
+                                        "g": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "S": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Port",
+                                    "dst": "Port"
+                                },
+                                "z": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Port",
+                                    "dst": "Port"
+                                },
+                                "P": {
+                                    "name": "Port2Port",
+                                    "isMeta": false,
+                                    "metaType": "Port2Port",
+                                    "src": "Port",
+                                    "dst": "Port"
+                                },
+                                "N": {
+                                    "name": "CH3-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "0": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "6": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "8": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "9": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "x": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "M": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "D": {
+                                            "name": "Anchor",
+                                            "isMeta": false,
+                                            "metaType": "Anchor",
+                                            "src": "Port",
+                                            "dst": "C"
+                                        },
+                                        "v": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "g": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        }
+                                    }
+                                },
+                                "J": {
+                                    "name": "-CH2-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "K": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "j": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "G": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "Z": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "O": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "h": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "J": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "T": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "k": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "p": {
+                    "name": "Molecule",
+                    "isMeta": false,
+                    "metaType": "Molecule",
+                    "children": {
+                        "1": {
+                            "name": "-Silane-",
+                            "isMeta": false,
+                            "metaType": "Molecule",
+                            "children": {
+                                "3": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "S",
+                                    "dst": "Port"
+                                },
+                                "M": {
+                                    "name": "Port",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                },
+                                "m": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "S",
+                                    "dst": "-OH"
+                                },
+                                "A": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "S",
+                                    "dst": "OH-"
+                                },
+                                "J": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "S",
+                                    "dst": "Port"
+                                },
+                                "U": {
+                                    "name": "S",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "c": {
+                                    "name": "OH-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "9": {
+                                            "name": "O",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "c": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "J": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "B": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "O",
+                                            "dst": "H"
+                                        },
+                                        "v": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "O",
+                                            "dst": "Port"
+                                        }
+                                    }
+                                },
+                                "b": {
+                                    "name": "-OH",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "9": {
+                                            "name": "O",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "c": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "J": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "B": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "O",
+                                            "dst": "H"
+                                        },
+                                        "v": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "O",
+                                            "dst": "Port"
+                                        }
+                                    }
+                                },
+                                "g": {
+                                    "name": "Port",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                }
+                            }
+                        },
+                        "F": {
+                            "name": "Methane",
+                            "isMeta": false,
+                            "metaType": "Molecule",
+                            "children": {
+                                "3": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0.1,
+                                        0.07
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "k": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "H",
+                                    "dst": "C"
+                                },
+                                "o": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "H",
+                                    "dst": "C"
+                                },
+                                "t": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "H"
+                                },
+                                "A": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "H",
+                                    "dst": "C"
+                                },
+                                "F": {
+                                    "name": "H",
+                                    "pos": [
+                                        -0.1,
+                                        0,
+                                        -0.07
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "v": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        -0.1,
+                                        0.07
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "G": {
+                                    "name": "C",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "O": {
+                                    "name": "H",
+                                    "pos": [
+                                        0.1,
+                                        0,
+                                        -0.07
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                }
+                            }
+                        },
+                        "q": {
+                            "name": "-CH2-",
+                            "isMeta": false,
+                            "metaType": "Molecule",
+                            "children": {
+                                "k": {
+                                    "name": "Port",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                },
+                                "K": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "H"
+                                },
+                                "G": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "H"
+                                },
+                                "Z": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "Port"
+                                },
+                                "O": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "j": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "Port"
+                                },
+                                "h": {
+                                    "name": "C",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "J": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "T": {
+                                    "name": "Port",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                }
+                            }
+                        },
+                        "C": {
+                            "name": "-CH3",
+                            "isMeta": false,
+                            "metaType": "Molecule",
+                            "children": {
+                                "0": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "H"
+                                },
+                                "6": {
+                                    "name": "C",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "8": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "H"
+                                },
+                                "9": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "M": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "C",
+                                    "dst": "H"
+                                },
+                                "g": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "x": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "l": {
+                                    "name": "Up",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                }
+                            }
+                        },
+                        "V": {
+                            "name": "-OH",
+                            "isMeta": false,
+                            "metaType": "Molecule",
+                            "children": {
+                                "9": {
+                                    "name": "O",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "c": {
+                                    "name": "H",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "J": {
+                                    "name": "Port",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                },
+                                "B": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "O",
+                                    "dst": "H"
+                                },
+                                "v": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "O",
+                                    "dst": "Port"
+                                }
+                            }
+                        }
+                    }
+                },
+                "z": {
+                    "name": "Polymer",
+                    "isMeta": false,
+                    "metaType": "Polymer",
+                    "children": {
+                        "t": {
+                            "name": "CH3-CH2*n-CH3",
+                            "isMeta": false,
+                            "metaType": "Polymer",
+                            "children": {
+                                "3": {
+                                    "name": "-CH3",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "0": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "6": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "8": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "9": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "x": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "l": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "M": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "w": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "g": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        }
+                                    }
+                                },
+                                "l": {
+                                    "name": "-CH2-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "K": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "j": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "G": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "Z": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "O": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "h": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "J": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "T": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "k": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "F": {
+                                    "name": "CH3-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "0": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "6": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "8": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "9": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "x": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "l": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "M": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "w": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "g": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "k": {
+                            "name": "CH3-CH2*n-",
+                            "isMeta": false,
+                            "metaType": "Polymer",
+                            "children": {
+                                "0": {
+                                    "name": "Atom",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Atom"
+                                },
+                                "3": {
+                                    "name": "Bond",
+                                    "isMeta": false,
+                                    "metaType": "Bond",
+                                    "src": "Up",
+                                    "dst": "Port"
+                                },
+                                "k": {
+                                    "name": "Port",
+                                    "isMeta": false,
+                                    "metaType": "Port",
+                                    "children": {}
+                                },
+                                "G": {
+                                    "name": "-CH3",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "0": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "6": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "8": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "9": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "g": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "x": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "l": {
+                                            "name": "Up",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "M": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "w": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Up"
+                                        }
+                                    }
+                                },
+                                "l": {
+                                    "name": "-CH2-",
+                                    "isMeta": false,
+                                    "metaType": "Molecule",
+                                    "children": {
+                                        "k": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        },
+                                        "K": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "G": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "H"
+                                        },
+                                        "Z": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "O": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "j": {
+                                            "name": "Bond",
+                                            "isMeta": false,
+                                            "metaType": "Bond",
+                                            "src": "C",
+                                            "dst": "Port"
+                                        },
+                                        "h": {
+                                            "name": "C",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "J": {
+                                            "name": "H",
+                                            "pos": [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                                            "isMeta": false,
+                                            "metaType": "Atom"
+                                        },
+                                        "T": {
+                                            "name": "Port",
+                                            "isMeta": false,
+                                            "metaType": "Port",
+                                            "children": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "u": {
+            "name": "Language",
+            "isMeta": true,
+            "metaType": "Language",
+            "children": {
+                "2": {
+                    "name": "Copolymer",
+                    "isMeta": true,
+                    "metaType": "Copolymer",
+                    "children": {}
+                },
+                "5": {
+                    "name": "Anchor",
+                    "isMeta": true,
+                    "metaType": "Anchor",
+                    "children": {}
+                },
+                "6": {
+                    "name": "Compound",
+                    "isMeta": true,
+                    "metaType": "Compound",
+                    "children": {}
+                },
+                "X": {
+                    "name": "Polymer",
+                    "isMeta": true,
+                    "metaType": "Polymer",
+                    "children": {}
+                },
+                "G": {
+                    "name": "Atom",
+                    "isMeta": true,
+                    "metaType": "Atom",
+                    "children": {}
+                },
+                "K": {
+                    "name": "Port",
+                    "isMeta": true,
+                    "metaType": "Port",
+                    "children": {}
+                },
+                "j": {
+                    "name": "Bond",
+                    "isMeta": true,
+                    "metaType": "Bond",
+                    "children": {}
+                },
+                "h": {
+                    "name": "Molecule",
+                    "isMeta": true,
+                    "metaType": "Molecule",
+                    "children": {}
+                },
+                "p": {
+                    "name": "Port2Port",
+                    "isMeta": true,
+                    "metaType": "Port2Port",
+                    "children": {}
+                }
+            }
+        }
+    }
+}

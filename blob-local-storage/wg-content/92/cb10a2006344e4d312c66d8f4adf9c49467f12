@@ -1,0 +1,8 @@
+{
+    "stateMachine": {
+        "name": "FSM",
+        "initialState": null,
+        "finalStates": [],
+        "states": []
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "name": "Methane",
+    "children": {
+        "3": {
+            "name": "H",
+            "pos": [
+                0,
+                0.1,
+                0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "children": {}
+        },
+        "k": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "H",
+            "dst": "C"
+        },
+        "o": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "H",
+            "dst": "C"
+        },
+        "t": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "A": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "H",
+            "dst": "C"
+        },
+        "F": {
+            "name": "H",
+            "pos": [
+                -0.1,
+                0,
+                -0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "children": {}
+        },
+        "v": {
+            "name": "H",
+            "pos": [
+                0,
+                -0.1,
+                0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "children": {}
+        },
+        "G": {
+            "name": "C",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "children": {}
+        },
+        "O": {
+            "name": "H",
+            "pos": [
+                0.1,
+                0,
+                -0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "children": {}
+        }
+    }
+}

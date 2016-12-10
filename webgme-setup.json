@@ -1,0 +1,17 @@
+{
+  "components": {
+    "plugins": {
+      "FSMCodeGenerator": {
+        "src": "src/plugins/FSMCodeGenerator",
+        "test": "test/plugins/FSMCodeGenerator"
+      },
+      "MoleculeCodeGenerator": {
+        "src": "src/plugins/MoleculeCodeGenerator",
+        "test": "test/plugins/MoleculeCodeGenerator"
+      }
+    }
+  },
+  "dependencies": {
+    "plugins": {}
+  }
+}

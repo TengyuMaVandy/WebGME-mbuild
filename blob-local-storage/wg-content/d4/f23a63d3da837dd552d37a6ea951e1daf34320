@@ -1,0 +1,74 @@
+[
+    {
+        "name": "FCO",
+        "path": "/1",
+        "nbrOfChildren": 0,
+        "base": "null"
+    },
+    {
+        "name": "Example",
+        "path": "/v",
+        "nbrOfChildren": 4,
+        "base": "FCO"
+    },
+    {
+        "name": "Port2Port",
+        "path": "/K",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Anchor",
+        "path": "/g",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Copolymer",
+        "path": "/u/2",
+        "nbrOfChildren": 0,
+        "base": "Compound"
+    },
+    {
+        "name": "Compound",
+        "path": "/u/6",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Molecule",
+        "path": "/u/h",
+        "nbrOfChildren": 0,
+        "base": "Compound"
+    },
+    {
+        "name": "Polymer",
+        "path": "/u/X",
+        "nbrOfChildren": 0,
+        "base": "Compound"
+    },
+    {
+        "name": "Atom",
+        "path": "/u/G",
+        "nbrOfChildren": 0,
+        "base": "Compound"
+    },
+    {
+        "name": "Port",
+        "path": "/u/K",
+        "nbrOfChildren": 0,
+        "base": "Compound"
+    },
+    {
+        "name": "Bond",
+        "path": "/u/j",
+        "nbrOfChildren": 0,
+        "base": "FCO"
+    },
+    {
+        "name": "Language",
+        "path": "/u",
+        "nbrOfChildren": 7,
+        "base": "FCO"
+    }
+]

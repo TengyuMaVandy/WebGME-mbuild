@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"C","location":[-3.3566899260151217e-15,-5.6,-1.7780915628762273e-15]},{"element":"H","location":[-1.099999994039539,-5.599999999999998,-1.1516307160618393e-15]},{"element":"H","location":[1.0999999940395324,-5.6000000000000005,-2.4045524096906154e-15]},{"element":"C","location":[-1.940451306514091e-15,-4.2,-1.2126458144209e-15]},{"element":"H","location":[-1.0999999940395377,-4.199999999999999,-6.574029815007222e-16]},{"element":"H","location":[1.0999999940395337,-4.2,-1.7678886473410777e-15]},{"element":"Si","location":[-8.4513653006877e-16,-2.8000000000000003,-7.903147527336591e-16]},{"element":"O","location":[1.3073040437212873,-2.8000000000000007,-1.0508413560766296e-15]},{"element":"H","location":[1.634471984951131,-2.76835930169716,-0.6710000336170209]},{"element":"O","location":[-1.450170577684663,-2.6490757328794023,-4.779813539207003e-16]},{"element":"H","location":[-1.8179490456194074,-2.7317144878879276,0.8020000159740446]},{"element":"Si","location":[-2.2687070951706956e-16,-1.3999999999999995,-3.5063645628664955e-16]},{"element":"O","location":[1.3073040437212877,-1.4000000000000001,-9.379494171349661e-16]},{"element":"H","location":[1.634471984951131,-1.3683593016971591,-0.6710000336170209]},{"element":"O","location":[-1.4501705776846618,-1.2490757328794022,3.7336347990234797e-16]},{"element":"H","location":[-1.8179490456194065,-1.3317144878879272,0.8020000159740454]},{"element":"C","location":[0.0,0.0,0.0]},{"element":"H","location":[1.0699999332427979,0.0,0.0]},{"element":"H","location":[-0.35700008273124695,0.7690000534057617,0.6530000269412994]},{"element":"H","location":[-0.35700008273124695,0.18100008368492126,-0.9929999709129333]},{"element":"C","location":[-4.631711680858075e-15,-6.999999999999998,-2.0686577451023425e-15]},{"element":"H","location":[-1.069999933242802,-6.999999999999997,-1.4380982919666099e-15]},{"element":"H","location":[0.35700008273124195,-7.76900005340576,0.6530000269412971]},{"element":"H","location":[0.35700008273124173,-7.1810000836849195,-0.9929999709129357]}],"bonds":[{"atoms":[16,11],"order":1},{"atoms":[15,14],"order":1},{"atoms":[13,12],"order":1},{"atoms":[17,16],"order":1},{"atoms":[23,20],"order":1},{"atoms":[6,9],"order":1},{"atoms":[19,16],"order":1},{"atoms":[5,3],"order":1},{"atoms":[22,20],"order":1},{"atoms":[0,20],"order":1},{"atoms":[3,0],"order":1},{"atoms":[6,3],"order":1},{"atoms":[14,11],"order":1},{"atoms":[1,0],"order":1},{"atoms":[7,6],"order":1},{"atoms":[18,16],"order":1},{"atoms":[10,9],"order":1},{"atoms":[12,11],"order":1},{"atoms":[2,0],"order":1},{"atoms":[20,21],"order":1},{"atoms":[4,3],"order":1},{"atoms":[7,8],"order":1},{"atoms":[6,11],"order":1}],"name":"Copolymer"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>

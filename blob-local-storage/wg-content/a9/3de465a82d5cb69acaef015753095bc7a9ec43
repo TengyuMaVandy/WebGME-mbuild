@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"C","location":[3.275157922644212e-14,-22.40000000000002,2.1801137284338523e-14]},{"element":"H","location":[-1.0999999940395027,-22.40000000000002,2.0785933135237646e-14]},{"element":"H","location":[1.0999999940395684,-22.40000000000002,2.28163414334394e-14]},{"element":"C","location":[3.2752721863096416e-14,-21.000000000000018,2.076443082274198e-14]},{"element":"H","location":[-1.0999999940395027,-21.000000000000018,1.9678008659746892e-14]},{"element":"H","location":[1.0999999940395684,-21.000000000000018,2.1850852985737067e-14]},{"element":"Si","location":[3.243294065669501e-14,-19.60000000000002,1.958460967437735e-14]},{"element":"O","location":[1.3073040437213204,-19.600000000000016,2.1275133343057e-14]},{"element":"H","location":[1.6344719849511646,-19.56835930169718,-0.6710000336169981]},{"element":"O","location":[-1.4501705776846296,-19.44907573287942,1.7559958646776587e-14]},{"element":"H","location":[-1.8179490456193754,-19.531714487887946,0.8020000159740621]},{"element":"Si","location":[3.163611049439998e-14,-18.200000000000017,1.842213576077249e-14]},{"element":"O","location":[1.307304043721319,-18.200000000000017,1.9785873071946792e-14]},{"element":"H","location":[1.6344719849511633,-18.168359301697176,-0.6710000336169998]},{"element":"O","location":[-1.4501705776846299,-18.04907573287942,1.6809151270547766e-14]},{"element":"H","location":[-1.8179490456193756,-18.131714487887947,0.8020000159740613]},{"element":"C","location":[3.0310189671932026e-14,-16.80000000000002,1.7177262482058728e-14]},{"element":"H","location":[-1.099999994039505,-16.80000000000002,1.5553531148198066e-14]},{"element":"H","location":[1.0999999940395657,-16.800000000000015,1.8800993815919387e-14]},{"element":"C","location":[2.7856698590079142e-14,-15.400000000000013,1.53686040736525e-14]},{"element":"H","location":[-1.099999994039508,-15.400000000000018,1.3151304325281359e-14]},{"element":"H","location":[1.0999999940395635,-15.400000000000013,1.7585903822023643e-14]},{"element":"Si","location":[2.4770033439494727e-14,-14.000000000000018,1.300917096162364e-14]},{"element":"O","location":[1.3073040437213124,-14.000000000000012,1.5654077252700326e-14]},{"element":"H","location":[1.6344719849511578,-13.968359301697175,-0.6710000336170039]},{"element":"O","location":[-1.4501705776846374,-13.84907573287942,9.793383691622526e-15]},{"element":"H","location":[-1.8179490456193836,-13.931714487887943,0.8020000159740546]},{"element":"Si","location":[2.097213166375982e-14,-12.600000000000016,1.03114667717793e-14]},{"element":"O","location":[1.307304043721309,-12.600000000000012,1.3911990764286355e-14]},{"element":"H","location":[1.6344719849511544,-12.56835930169717,-0.6710000336170052]},{"element":"O","location":[-1.4501705776846416,-12.449075732879422,6.009004686396061e-15]},{"element":"H","location":[-1.8179490456193883,-12.531714487887946,0.8020000159740502]},{"element":"C","location":[1.69660630709077e-14,-11.200000000000014,7.722182799183509e-15]},{"element":"H","location":[-1.0999999940395186,-11.200000000000017,5.431196689503351e-15]},{"element":"H","location":[1.0999999940395524,-11.200000000000012,1.001316890886367e-14]},{"element":"C","location":[1.3749293659625024e-14,-9.800000000000011,5.809440982218675e-15]},{"element":"H","location":[-1.099999994039522,-9.800000000000013,4.14274085603049e-15]},{"element":"H","location":[1.0999999940395495,-9.800000000000011,7.47614110840686e-15]},{"element":"Si","location":[1.0974878734716435e-14,-8.40000000000001,4.564567703504912e-15]},{"element":"O","location":[1.3073040437212984,-8.400000000000007,5.995609918414783e-15]},{"element":"H","location":[1.6344719849511429,-8.368359301697165,-0.6710000336170134]},{"element":"O","location":[-1.4501705776846512,-8.249075732879415,2.873341849730402e-15]},{"element":"H","location":[-1.8179490456193963,-8.33171448788794,0.8020000159740476]},{"element":"Si","location":[8.842311495919261e-15,-7.000000000000009,3.879142745793672e-15]},{"element":"O","location":[1.307304043721296,-7.000000000000006,4.832550506780555e-15]},{"element":"H","location":[1.6344719849511404,-6.9683593016971646,-0.671000033617015]},{"element":"O","location":[-1.4501705776846532,-6.849075732879413,2.7806267651680907e-15]},{"element":"H","location":[-1.8179490456193983,-6.931714487887939,0.8020000159740476]},{"element":"C","location":[7.741904725328283e-15,-5.600000000000007,3.1590233185628934e-15]},{"element":"H","location":[-1.0999999940395284,-5.600000000000007,2.5918168527373917e-15]},{"element":"H","location":[1.099999994039544,-5.600000000000007,3.726229784388395e-15]},{"element":"C","location":[6.988442649932676e-15,-4.200000000000006,2.226400265524956e-15]},{"element":"H","location":[-1.0999999940395284,-4.200000000000006,1.7949816550033404e-15]},{"element":"H","location":[1.0999999940395424,-4.200000000000006,2.657818876046576e-15]},{"element":"Si","location":[5.940077583621007e-15,-2.8000000000000047,1.5192912643640078e-15]},{"element":"O","location":[1.307304043721294,-2.8000000000000025,1.9647093580171623e-15]},{"element":"H","location":[1.634471984951138,-2.768359301697163,-0.6710000336170179]},{"element":"O","location":[-1.450170577684656,-2.649075732879409,9.63030885025257e-16]},{"element":"H","location":[-1.8179490456194012,-2.731714487887935,0.802000015974046]},{"element":"Si","location":[2.6278983811596045e-15,-1.4000000000000012,6.820780025047909e-16]},{"element":"O","location":[1.3073040437212908,-1.3999999999999968,3.2702094873272667e-15]},{"element":"H","location":[1.6344719849511355,-1.3683593016971551,-0.6710000336170161]},{"element":"O","location":[-1.4501705776846598,-1.24907573287941,-2.3217497863710343e-15]},{"element":"H","location":[-1.817949045619406,-1.3317144878879361,0.8020000159740421]},{"element":"C","location":[0.0,0.0,0.0]},{"element":"H","location":[1.0699999332427979,0.0,0.0]},{"element":"H","location":[-0.35700008273124695,0.7690000534057617,0.6530000269412994]},{"element":"H","location":[-0.35700008273124695,0.18100008368492126,-0.9929999709129333]},{"element":"C","location":[3.47725320759551e-14,-23.80000000000002,2.3306009899748403e-14]},{"element":"H","location":[-1.0699999332427637,-23.800000000000022,2.0485139201112935e-14]},{"element":"H","location":[0.3570000827312826,-24.56900005340578,0.6530000269413249]},{"element":"H","location":[0.357000082731285,-23.98100008368494,-0.9929999709129091]}],"bonds":[{"atoms":[35,32],"order":1},{"atoms":[20,19],"order":1},{"atoms":[29,28],"order":1},{"atoms":[4,3],"order":1},{"atoms":[62,63],"order":1},{"atoms":[43,44],"order":1},{"atoms":[37,35],"order":1},{"atoms":[12,11],"order":1},{"atoms":[24,23],"order":1},{"atoms":[30,27],"order":1},{"atoms":[59,60],"order":1},{"atoms":[59,62],"order":1},{"atoms":[38,35],"order":1},{"atoms":[0,68],"order":1},{"atoms":[48,50],"order":1},{"atoms":[66,64],"order":1},{"atoms":[10,9],"order":1},{"atoms":[51,54],"order":1},{"atoms":[46,47],"order":1},{"atoms":[42,41],"order":1},{"atoms":[36,35],"order":1},{"atoms":[18,16],"order":1},{"atoms":[43,46],"order":1},{"atoms":[71,68],"order":1},{"atoms":[17,16],"order":1},{"atoms":[26,25],"order":1},{"atoms":[69,68],"order":1},{"atoms":[6,3],"order":1},{"atoms":[33,32],"order":1},{"atoms":[27,22],"order":1},{"atoms":[6,9],"order":1},{"atoms":[19,16],"order":1},{"atoms":[57,58],"order":1},{"atoms":[7,8],"order":1},{"atoms":[54,59],"order":1},{"atoms":[23,22],"order":1},{"atoms":[13,12],"order":1},{"atoms":[68,70],"order":1},{"atoms":[38,41],"order":1},{"atoms":[3,0],"order":1},{"atoms":[65,64],"order":1},{"atoms":[51,53],"order":1},{"atoms":[15,14],"order":1},{"atoms":[14,11],"order":1},{"atoms":[34,32],"order":1},{"atoms":[51,52],"order":1},{"atoms":[39,40],"order":1},{"atoms":[7,6],"order":1},{"atoms":[28,27],"order":1},{"atoms":[1,0],"order":1},{"atoms":[54,55],"order":1},{"atoms":[25,22],"order":1},{"atoms":[44,45],"order":1},{"atoms":[6,11],"order":1},{"atoms":[64,59],"order":1},{"atoms":[22,19],"order":1},{"atoms":[32,27],"order":1},{"atoms":[43,48],"order":1},{"atoms":[55,56],"order":1},{"atoms":[60,61],"order":1},{"atoms":[5,3],"order":1},{"atoms":[39,38],"order":1},{"atoms":[48,51],"order":1},{"atoms":[16,11],"order":1},{"atoms":[67,64],"order":1},{"atoms":[31,30],"order":1},{"atoms":[48,49],"order":1},{"atoms":[54,57],"order":1},{"atoms":[2,0],"order":1},{"atoms":[21,19],"order":1},{"atoms":[43,38],"order":1}],"name":"Copolymer"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>
