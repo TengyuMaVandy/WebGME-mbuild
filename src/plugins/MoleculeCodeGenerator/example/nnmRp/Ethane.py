@@ -1,0 +1,20 @@
+
+# -- ==ethane== --
+
+import mbuild as mb
+from _CH3_CH2 import CH3
+
+
+class Ethane(mb.Compound):
+    def __init__(self):
+        super(Ethane, self).__init__()
+
+        self.add(CH3(), "methyl1")
+        self.add(CH3(), "methyl2")
+        mb.equivalence_transform(self['methyl1'], self['methyl1']['up'], self['methyl2']['up'])
+
+
+if __name__ == "__main__":
+    ethane = Ethane()
+    tempdir = ethane.visualize(show_ports=False)
+    print(tempdir)

@@ -1,0 +1,236 @@
+{
+    "name": "Ethane",
+    "metaType": "Polymer",
+    "children": {
+        "B": {
+            "name": "Port2Port",
+            "isMeta": false,
+            "metaType": "Port2Port",
+            "src": "Up",
+            "dst": "Up"
+        },
+        "d": {
+            "name": "-CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Molecule",
+            "cap": "",
+            "pyfile": "",
+            "path": "/v/z/g/d",
+            "children": {
+                "0": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "6": {
+                    "name": "C",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/d/6",
+                    "children": {}
+                },
+                "8": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "9": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/d/9",
+                    "children": {}
+                },
+                "l": {
+                    "name": "Up",
+                    "pos": [
+                        0,
+                        -0.07,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                },
+                "g": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/d/g",
+                    "children": {}
+                },
+                "x": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/d/x",
+                    "children": {}
+                },
+                "M": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "W": {
+                    "name": "Anchor",
+                    "isMeta": false,
+                    "metaType": "Anchor",
+                    "src": "Up",
+                    "dst": "C"
+                }
+            }
+        },
+        "Y": {
+            "name": "-CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Molecule",
+            "cap": "",
+            "pyfile": "",
+            "path": "/v/z/g/Y",
+            "children": {
+                "0": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "6": {
+                    "name": "C",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/Y/6",
+                    "children": {}
+                },
+                "8": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "9": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/Y/9",
+                    "children": {}
+                },
+                "l": {
+                    "name": "Up",
+                    "pos": [
+                        0,
+                        -0.07,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                },
+                "g": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/Y/g",
+                    "children": {}
+                },
+                "x": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "path": "/v/z/g/Y/x",
+                    "children": {}
+                },
+                "M": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "W": {
+                    "name": "Anchor",
+                    "isMeta": false,
+                    "metaType": "Anchor",
+                    "src": "Up",
+                    "dst": "C"
+                }
+            }
+        }
+    },
+    "length": 1,
+    "pyfile": "",
+    "path": "/v/z/g"
+}

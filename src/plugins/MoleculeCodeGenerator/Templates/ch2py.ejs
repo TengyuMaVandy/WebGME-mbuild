@@ -1,8 +1,9 @@
-<% var j = 0, name = molecule.name.slice(1,-1)%>
-<% var example_path = 'src/plugins/MoleculeCodeGenerator/Templates/lib/ch2.pdb'%>
-<% var ch2_pdb = app.locals.path.join(process.cwd(), example_path)%>
+<%
+var j = 0, name = molecule.name.slice(1,-1)
+var example_path = '/src/plugins/MoleculeCodeGenerator/Templates/lib/moieties/ch2.pdb'
+var ch2_pdb = 'E:\\\\Users\\TengyuMa\\WebGME\\WebGME-mbuild\\src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\moieties\\ch2.pdb'
+%>
 # -- ==ch2== --
-
 import mbuild as mb
 
 
@@ -29,5 +30,4 @@ class <%=name%>(mb.Compound):
 if __name__ == "__main__":
     ch2 = CH2()
     tempdir = ch2.visualize(show_ports=False)
-    ch2.save('ch2.mol2')
     print(tempdir)

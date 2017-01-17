@@ -1,10 +1,11 @@
-<% var j = 0, name = molecule.name%>
-<% var ch2_pdb = 'C:/Users/TengyuMa/Desktop/cs6388/classproject/src/plugins/MoleculeCodeGenerator/Templates/lib/ch2.pdb'%>
+<%
+var name = molecule.name
+var visited_node = new Set()
+%>
 # -- ==ethane== --
-
 import mbuild as mb
-from mbuild.lib.moieties import CH3
-
+<% for(var i in molecule.children) {%><% if(molecule.children[i].metaType == 'Molecule' && !visited_node.has(molecule.children[i].name)) {%>
+from <%=molecule.children[i].name.replace(/-/g, '_')%> import <%=molecule.children[i].name.replace(/-/g, '')%><%visited_node.add(molecule.children[i].name)} %><%} %>
 
 class <%=name%>(mb.Compound):
     def __init__(self):

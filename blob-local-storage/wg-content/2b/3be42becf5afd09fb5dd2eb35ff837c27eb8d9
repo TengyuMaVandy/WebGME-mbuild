@@ -1,0 +1,143 @@
+{
+    "name": "Ethane",
+    "children": {
+        "q": {
+            "name": "Port2Port",
+            "isMeta": false,
+            "metaType": "Port2Port",
+            "src": "Up",
+            "dst": "Up"
+        },
+        "H": {
+            "name": "-CH3",
+            "isMeta": false,
+            "metaType": "-CH3",
+            "children": {
+                "0": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "6": {
+                    "name": "C",
+                    "isMeta": false,
+                    "metaType": "C",
+                    "children": {}
+                },
+                "8": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "9": {
+                    "name": "H",
+                    "isMeta": false,
+                    "metaType": "H",
+                    "children": {}
+                },
+                "l": {
+                    "name": "Up",
+                    "isMeta": false,
+                    "metaType": "Up",
+                    "children": {}
+                },
+                "g": {
+                    "name": "H",
+                    "isMeta": false,
+                    "metaType": "H",
+                    "children": {}
+                },
+                "x": {
+                    "name": "H",
+                    "isMeta": false,
+                    "metaType": "H",
+                    "children": {}
+                },
+                "M": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "W": {
+                    "name": "Anchor",
+                    "isMeta": false,
+                    "metaType": "Anchor",
+                    "src": "Up",
+                    "dst": "C"
+                }
+            }
+        },
+        "t": {
+            "name": "-CH3",
+            "isMeta": false,
+            "metaType": "-CH3",
+            "children": {
+                "0": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "6": {
+                    "name": "C",
+                    "isMeta": false,
+                    "metaType": "C",
+                    "children": {}
+                },
+                "8": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "9": {
+                    "name": "H",
+                    "isMeta": false,
+                    "metaType": "H",
+                    "children": {}
+                },
+                "l": {
+                    "name": "Up",
+                    "isMeta": false,
+                    "metaType": "Up",
+                    "children": {}
+                },
+                "g": {
+                    "name": "H",
+                    "isMeta": false,
+                    "metaType": "H",
+                    "children": {}
+                },
+                "x": {
+                    "name": "H",
+                    "isMeta": false,
+                    "metaType": "H",
+                    "children": {}
+                },
+                "M": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "C",
+                    "dst": "H"
+                },
+                "W": {
+                    "name": "Anchor",
+                    "isMeta": false,
+                    "metaType": "Anchor",
+                    "src": "Up",
+                    "dst": "C"
+                }
+            }
+        }
+    },
+    "length": 1
+}

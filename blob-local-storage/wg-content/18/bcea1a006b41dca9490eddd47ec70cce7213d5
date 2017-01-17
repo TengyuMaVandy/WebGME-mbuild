@@ -1,0 +1,98 @@
+{
+    "name": "-CH3",
+    "metaType": "Molecule",
+    "children": {
+        "0": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "6": {
+            "name": "C",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "children": {}
+        },
+        "8": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "9": {
+            "name": "H",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "children": {}
+        },
+        "g": {
+            "name": "H",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "children": {}
+        },
+        "x": {
+            "name": "H",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "children": {}
+        },
+        "l": {
+            "name": "Up",
+            "pos": [
+                0,
+                -0.07,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        },
+        "M": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "W": {
+            "name": "Anchor",
+            "isMeta": false,
+            "metaType": "Anchor",
+            "src": "Up",
+            "dst": "C"
+        }
+    },
+    "length": 1,
+    "pyfile": ""
+}

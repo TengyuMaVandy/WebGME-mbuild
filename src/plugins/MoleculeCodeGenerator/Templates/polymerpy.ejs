@@ -1,4 +1,12 @@
-<% var j = 0, name = molecule.name%>
+<%
+var name = molecule.name
+var visited_node = new Set()
+var meta_type = ['Atom', 'Molecule', 'Polymer', 'Copolymer']
+var cap_front = ''
+var main_chain = ''
+var cap_end = ''
+var length = 1
+%>
 # -- ==polymer== --
 import itertools as it
 
@@ -6,8 +14,24 @@ from mbuild.compound import Compound
 from mbuild.coordinate_transform import equivalence_transform
 from mbuild.utils.validation import assert_port_exists
 from mbuild import clone
-from mbuild.lib.moieties import CH2
-from mbuild.lib.moieties import CH3
+<% for(var i in molecule.children) {
+    if(meta_type.indexOf(molecule.children[i].metaType) != -1 && !visited_node.has(molecule.children[i].name)) {%>
+from <%=molecule.children[i].name.replace(/-/g, '_')%> import <%=molecule.children[i].name.replace(/-/g, '')%><%
+        visited_node.add(molecule.children[i].name)
+    }
+    if(meta_type.indexOf(molecule.children[i].metaType) != -1) {
+        if (molecule.children[i].cap == 'front') {
+            cap_front = molecule.children[i].name.replace(/-/g, '')
+        }
+        else if (molecule.children[i].cap == 'end') {
+            cap_end = molecule.children[i].name.replace(/-/g, '')
+        }
+        else {
+            main_chain = molecule.children[i].name.replace(/-/g, '')
+            length = molecule.children[i].length
+        }
+    }
+} %>
 
 
 __all__ = ['Polymer']
@@ -82,24 +106,19 @@ class PolymerWithCap(Compound):
         self.add(main_chain, 'main_chain')
 
         # add caps
-        cap_front = CH3()
+        <% if(cap_front) {%>
+        cap_front = <%=cap_front%>()
         self.add(cap_front, "cap_front")
         equivalence_transform(self['main_chain'], self['main_chain']['up'], self['cap_front']['up'])
-
-        cap_end = CH3()
+        <% } if(cap_end) {%>
+        cap_end = <%=cap_end%>()
         self.add(cap_end, 'cap_end')
         equivalence_transform(self['cap_end'], self['cap_end']['up'], self['main_chain']['down'])
-
+        <% }%>
 
 if __name__ == "__main__":
-    <% for(var i in molecule.children) {%><%
-    if(molecule.children[i].metaType == 'Molecule' && molecule.children[i].name == '-CH2-')
-    {%>
-    <%=molecule.children[i].name.slice(1,-1).toLowerCase()%> = <%=molecule.children[i].name.slice(1,-1)%>()<%
-        } %><%
-    } %>
-
-    poly = Polymer(<%=molecule.children[i].name.slice(1,-1).toLowerCase()%>, n=<%=molecule.children[i].length%>, port_labels=("up", "down"))
+    <%=main_chain.toLowerCase()%> = <%=main_chain%>()
+    poly = Polymer(<%=main_chain.toLowerCase()%>, n=<%=length%>, port_labels=("up", "down"))
     poly_cap = PolymerWithCap(poly)
     tempdir = poly_cap.visualize(show_ports=False)
     print(tempdir)

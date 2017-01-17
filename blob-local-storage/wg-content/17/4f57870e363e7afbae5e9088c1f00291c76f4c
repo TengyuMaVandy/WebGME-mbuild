@@ -1,0 +1,90 @@
+{
+    "name": "-CH2-",
+    "children": {
+        "5": {
+            "name": "Anchor",
+            "isMeta": false,
+            "metaType": "Anchor",
+            "src": "Up",
+            "dst": "C"
+        },
+        "T": {
+            "name": "Up",
+            "pos": [
+                0,
+                0.07,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        },
+        "k": {
+            "name": "Down",
+            "pos": [
+                0,
+                -0.07,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        },
+        "K": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "G": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "O": {
+            "name": "H",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "children": {}
+        },
+        "U": {
+            "name": "Anchor",
+            "isMeta": false,
+            "metaType": "Anchor",
+            "src": "Down",
+            "dst": "C"
+        },
+        "h": {
+            "name": "C",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "children": {}
+        },
+        "J": {
+            "name": "H",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "children": {}
+        }
+    },
+    "length": 1
+}

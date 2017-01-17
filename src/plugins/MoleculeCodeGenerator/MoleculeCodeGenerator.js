@@ -47,7 +47,7 @@ define([
         this.pluginMetadata = pluginMetadata;
     };
 
-    var PYTHON_EXE = "E:\\Users\\TengyuMa\\Anaconda3\\envs\\iModels\\python.exe";
+    var PYTHON_EXE = "\"E:\\Program Files\\Anaconda3\\envs\\iModels\\python.exe\"";
 
     /**
      * Metadata associated with the plugin. Contains id, name, version, description, icon, configStructue etc.
@@ -105,6 +105,7 @@ define([
         var example;
         var example_node;
         var example_type;
+        var example_path;
         var python_template;
 
         self.loadNodeMap(self.rootNode)
@@ -112,88 +113,175 @@ define([
                 iter = 1;
                 // self.getMoleculeInfo(self.rootNode, nodes, iter);
                 molecule['molecule'] = self.getMoleculeInfo(nodeObject, nodes, iter);  // only return the example json
-
                 metaMoleculeInfoJson = JSON.stringify(self.metaMoleculeInfo, null, 4);
                 artifact = self.blobClient.createArtifact('project-data');
-                example = self.core.getAttribute(nodeObject,'name');
+
+                // set PyTemplate for a node
+                example_dir = self.makeid();
+                var template_flag;
+                var visited_node = new Set();
+
+                function setPyTemplate(example, example_type, obj) {
+                    switch(example_type) {
+                        case 'Atom': {
+                            switch (example) {
+                                case 'H':
+                                    self.logger.info('&&&&&&&&&& no template for H now  &&&&&&&&&&');
+                                    template_flag = false;
+                                    break;
+                                default:
+                                    self.logger.info('&&&&&&&&&& no template for this Atom now &&&&&&&&&&');
+                                    break;
+                            }
+                            break;
+                        }
+                        case 'Molecule': {
+                            switch(example) {
+                                case 'Methane':
+                                    python_template = methanePyTemplate;
+                                    template_flag = true;
+                                    break;
+                                case '-CH3':
+                                    python_template = ch3PyTemplate;
+                                    template_flag = true;
+                                    break;
+                                case '-CH2-':
+                                    python_template = ch2PyTemplate;
+                                    template_flag = true;
+                                    break;
+                                default:
+                                    self.logger.info('&&&&&&&&&& no template for this Molecule now &&&&&&&&&&');
+                                    break;
+                            }
+                            break;
+                        }
+                        case 'Polymer': {
+                            switch (example) {
+                                case 'Ethane':
+                                    python_template = ethanePyTemplate;
+                                    template_flag = true;
+                                    break;
+                                case 'CH3-CH2-CH3':
+                                    python_template = polymerPyTemplate;
+                                    template_flag = true;
+                                    break;
+                                default:
+                                    python_template = polymerPyTemplate;
+                                    template_flag = true;
+                                    self.logger.info('########## use general template for this Polymer ##########');
+                                    break;
+                            }
+                            break;
+                        }
+                        case 'Copolymer': {
+                            switch (example) {
+                                case 'CH3-CH2-Silane-CH3':
+                                    python_template = copolymerPyTemplate;
+                                    template_flag = true;
+                                    break;
+                                default:
+                                    python_template = copolymerPyTemplate;
+                                    template_flag = true;
+                                    self.logger.info('########## use general template for this Copolymer ##########');
+                                    break;
+                            }
+                            break;
+                        }
+                        case 'Port2Port': {
+                            self.logger.info('&&&&&&&&&& need further development for Port2Port type &&&&&&&&&&');
+                            // template_flag = false;
+                            break;
+                        }
+                        default: {
+                            self.logger.error('&&&&&&&&&& didn\'t find: ', example_type, ' &&&&&&&&&&');
+                            // template_flag = false;
+                        }// self.logger.error('didn\'t find: ', example);
+                    }
+                    if (template_flag) {
+                        molecule['molecule'] = obj;
+                        examplePY = ejs.render(python_template, molecule);
+                        // self.logger.info(example);
+                        // self.logger.info('type +++++++++', typeof example);
+                        example = example.replace(/-/g, '_');
+                        // self.logger.info(example);
+
+                        // write the file to the example folder
+                        self.logger.info('########## Write ', example, ' to example folder ##########');
+                        example_py = example+'.py';
+                        example_path = path.join(example_dir, example_py);
+                        fs.writeFileSync(example_path, examplePY);
+
+                        // write the file to the lib folder and save the directory to the pyfile_dir attribute in order to copy the file in the future.
+                        self.logger.info('########## Write ', example, ' to lib folder ##########');
+                        var lib_dir = self.makedir(example_type);
+                        var lib_path = path.join(lib_dir, example_py);
+                        fs.writeFileSync(lib_path, examplePY);
+
+                        example_node = nodes[obj['path']];
+                        var base_node = self.core.getBase(example_node);
+                        self.logger.info('########## set pyfile_dir attribute for ', example, ' ##########');
+                        if (self.core.getAttribute(example_node, 'name') == self.core.getAttribute(base_node, 'name')) {
+                            self.core.setAttribute(base_node, 'pyfile_dir', lib_path);
+                        }
+                        else {
+                            self.core.setAttribute(example_node, 'pyfile_dir', lib_path);
+                        }
+                        template_flag = false
+                    }
+                }
+
+                // dfs go through the whole json structure. The advantage of dfs is to get the basic level of the whole sturcture,
+                // so that if we visit a node which is already known, we can use the associated pyfile directly.
+                function walkJson(obj) {
+                    example = obj['name'];
+                    example_type = obj['metaType'];
+                    if (!visited_node.has(example)) {
+                        self.logger.info('@@@@@@@@@@ ', obj.hasOwnProperty('pyfile_dir'), obj['pyfile_dir'], '@@@@@@@@@@');
+                        if (obj.hasOwnProperty('pyfile_dir') && obj['pyfile_dir'] ) {
+                            self.logger.info('########## we already had a pyfile for the node', 'pyfile_dir: ', obj['pyfile_dir'], ' ##########');
+                            var source = path.join(process.cwd(), obj['pyfile_dir']);
+                            example_py = example.replace(/-/g, '_')+'.py';
+                            example_path = path.join(example_dir, example_py);
+                            var destination = example_path;
+                            var ncp = require('ncp').ncp;
+                            ncp.limit = 16;
+                            ncp(source, destination, function (err){
+                                if (err) {
+                                    return console.error(err);
+                                }
+                                console.log('ncp copy file', source,  'done!');
+                            });
+                        }
+                        else {
+                            setPyTemplate(example, example_type, obj);
+                        }
+                        visited_node.add(example);
+                    }
+                    if (obj.hasOwnProperty('children') && obj['children']) {
+                        var children = obj['children'];
+                        for (var key in children) {
+                            if (children.hasOwnProperty(key)) {
+                                var val = children[key];
+                                // self.logger.info("*******", key, val);
+                                walkJson(val);
+                            }
+                        }
+                    }
+                }
+
+                walkJson(self.metaMoleculeInfo);
+
+                // root node for the example
+                example = self.core.getAttribute(nodeObject,'name').replace(/-/g, '_');
                 example_node = self.core.getMetaType(nodeObject);
                 example_type = self.core.getAttribute(example_node, 'name');
-                // example = 'Methane';
                 self.logger.info('example name is: ', example);
                 self.logger.info('example meta type is: ', example_type);
 
-                // molecule['molecule'] = self.findWeWant(self.metaMoleculeInfo, example, 'null');  // no need nay more
-
-                switch(example_type) {
-                    case 'Atom': {
-                        switch (example) {
-                            case 'H':
-                                self.logger.info('no template for H now');
-                                break;
-                            default:
-                                self.logger.info('no template for this Atom now');
-                                break;
-                        }
-                        break;
-                    }
-                    case 'Molecule': {
-                        switch(example) {
-                            case 'Methane':
-                                python_template = methanePyTemplate;
-                                break;
-                            case '-CH3':
-                                python_template = ch3PyTemplate;
-                                break;
-                            case '-CH2-':
-                                python_template = ch2PyTemplate;
-                                break;
-                            default:
-                                self.logger.info('no template for this Molecule now');
-                                break;
-                        }
-                        break;
-                    }
-                    case 'Polymer': {
-                        switch (example) {
-                            case 'Ethane':
-                                python_template = ethanePyTemplate;
-                                break;
-                            case 'CH3-CH2-CH3':
-                                python_template = polymerPyTemplate;
-                                break;
-                            default:
-                                python_template = polymerPyTemplate;
-                                self.logger.info('use general template for this Polymer');
-                                break;
-                        }
-                        break;
-                    }
-                    case 'Copolymer': {
-                        switch (example) {
-                            case 'CH3-CH2-Silane-CH3':
-                                python_template = copolymerPyTemplate;
-                                break;
-                            default:
-                                python_template = copolymerPyTemplate;
-                                self.logger.info('use general template for this Copolymer');
-                                break;
-                        }
-                        break;
-                    }
-                    default: {
-                        self.logger.error('#############################didn\'t find: ', example_type);
-                    }// self.logger.error('didn\'t find: ', example);
-                }
-
-                examplePY = ejs.render(python_template, molecule);
-
-                example_dir = self.makeid();
-
-                example_py = example+'.py';
-                var example_path = path.join(example_dir, example_py);
-                fs.writeFileSync(example_path, examplePY);
+                self.save('change attributes');
                 var childprocess = require("child-process-promise");
-                self.logger.info(path.join(process.cwd(), example_path));
+                example_py = example+'.py';
+                example_path = path.join(example_dir, example_py);
                 return childprocess.exec(PYTHON_EXE + ' ' + path.join(process.cwd(), example_path));
             })
             .then(function (output) {
@@ -216,7 +304,7 @@ define([
                 var imolecule_min_js = fs.readFileSync(path.join(source, 'imolecule.min.js'));
                 var index_html = fs.readFileSync(path.join(source, 'index.html'));
                 var jquery_1_11_1_min_js = fs.readFileSync(path.join(source, 'jquery-1.11.1.min.js'));
-                var Methane_py = fs.readFileSync(path.join(example_dir, example_py));
+                var example_file = fs.readFileSync(path.join(example_dir, example_py));
                 var server_css = fs.readFileSync(path.join(source, 'server.css'));
                 // }
                 return artifact.addFilesAsSoftLinks({
@@ -226,7 +314,7 @@ define([
                     'imolecule.min.js': imolecule_min_js,
                     'index.html': index_html,
                     'jquery-1.11.1.min.js': jquery_1_11_1_min_js,
-                    'Methane.py': Methane_py,
+                    'example.py': example_file,
                     'server.css': server_css
                     });
             })
@@ -262,74 +350,6 @@ define([
            });
     };
 
-    MoleculeCodeGenerator.prototype.printRandomly = function (nodes) {
-        var self = this,
-            path,
-            name,
-            attr,
-            metaNode,
-            node;
-
-        for (path in nodes) {
-            node = nodes[path];
-            name = self.core.getAttribute(node, 'name');
-            if (self.isMetaTypeOf(node, self.META.Transition)) {
-                attr = self.core.getAttribute(node, 'guard');
-                self.logger.info(name, 'has event', attr);
-            } else {
-                if (self.core.getParent(node)) {
-                    metaNode = self.getMetaType(node);
-                    self.logger.info(name, 'is of meta-type', self.core.getAttribute(metaNode, 'name'));
-                } else {
-                    
-                }
-            }
-        }
-    };
-
-    MoleculeCodeGenerator.prototype.printChildrenRec = function (root, nodes, indent) {
-        var self = this,
-            childrenPaths,
-            childNode,
-            i;
-
-        indent = indent || '';
-
-        childrenPaths = self.core.getChildrenPaths(root);
-        self.logger.info(indent, self.core.getAttribute(root, 'name'), 'has', childrenPaths.length, 'children.');
-
-        for (i = 0; i < childrenPaths.length; i += 1) {
-            childNode = nodes[childrenPaths[i]];
-            self.printChildrenRec(childNode, nodes, indent + '  ');           
-        }
-        // if (root === self.getMetaType(root)) {
-        //     self.metaNodeInfo.push({name: <nameOfMetaNode>, path: <pathOfMetaNode>, numberOfChildren: <numberOfChildrenOfMetaNode>});
-        // }
-    };
-
-    MoleculeCodeGenerator.prototype.findWeWant = function (root, want, found) {
-        var self = this,
-            i;
-        // self.logger.info('======', root);
-        // self.logger.info('======', root.name, 'vs', want)
-        if (root.name == want) {
-                found = root;
-                // self.logger.info('==#########in the if===###########', found.name)
-                return found;
-            }
-        for (i in root.children) {
-            var child = self.findWeWant(root.children[i], want, found);
-            if (child.name == want) {
-                found = child;
-                return found;
-            }
-            // if (i == self.metaMoleculeInfo.length) {
-            //     return
-            // }
-        }
-        return found
-    };
-
     MoleculeCodeGenerator.prototype.makeid = function (){
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -354,6 +374,25 @@ define([
     return path.join('src', 'plugins', 'MoleculeCodeGenerator', 'example', text);
     }
 
+    MoleculeCodeGenerator.prototype.makedir = function (text){
+        var path = require('path');
+        var fs = require('fs');
+        var mkdirSync = function (path) {
+            try {
+                fs.mkdirSync(path);
+            } catch(e) {
+                if ( e.code != 'EEXIST' ) throw e;
+            }
+        }
+        var mkdirpSyncDir = function (dirpath) {
+            var parts = dirpath.split(path.sep);
+            for( var i = 1; i <= parts.length; i++ ) {
+                mkdirSync( path.join.apply(null, parts.slice(0, i)) );
+            }
+        }
+        mkdirpSyncDir(path.join('src', 'plugins', 'MoleculeCodeGenerator', 'Templates', 'lib', text));
+        return path.join('src', 'plugins', 'MoleculeCodeGenerator', 'Templates', 'lib', text);
+    }
 
     MoleculeCodeGenerator.prototype.getMoleculeInfo = function (root, nodes, iter, indent) {
         var self = this,
@@ -364,6 +403,9 @@ define([
             zOfMetaNode,
             lengthOfMetaNode,
             capOfMetaNode,
+            pyfileOfMetaNode,
+            pyfile_dirOfMetaNode,
+            pathOfMetaNode,
             isMeta,
             metaType,
             children = {},
@@ -386,6 +428,9 @@ define([
         zOfMetaNode = self.core.getAttribute(root, 'z');
         lengthOfMetaNode = self.core.getAttribute(root, 'length');
         capOfMetaNode = self.core.getAttribute(root, 'cap');
+        pyfileOfMetaNode = self.core.getAttribute(root, 'pyfile');
+        pyfile_dirOfMetaNode = self.core.getAttribute(root, 'pyfile_dir');
+        pathOfMetaNode = self.core.getPath(root);
         idOfMetaNode = self.core.getRelid(root);
         isMeta = self.core.isMetaNode(root);
 
@@ -395,7 +440,7 @@ define([
         for (i = 0; i < childrenPaths.length; i += 1) {
             childNode = nodes[childrenPaths[i]];
             // self.logger.info('**********', childNode)
-            child_obj = self.getMoleculeInfo(childNode, nodes, iter + 1, indent + '  ')
+            child_obj = self.getMoleculeInfo(childNode, nodes, iter + 1, indent + '  ');
             // children.push(
             // self.logger.info('**********', child_obj)
 
@@ -413,14 +458,23 @@ define([
                 self.metaMoleculeInfo = child;
             }
             else {
-                child = {name: nameOfMetaNode, children: children, length: lengthOfMetaNode};
+                metaType = self.core.getAttribute(self.core.getMetaType(root), 'name');
+                child = {name: nameOfMetaNode,
+                         metaType: metaType,
+                         children: children,
+                         length: lengthOfMetaNode,
+                         pyfile: pyfileOfMetaNode,
+                         pyfile_dir: pyfile_dirOfMetaNode,
+                         path: pathOfMetaNode
+                         };
                 self.metaMoleculeInfo = child;
             }
             // self.logger.info('******metaNodeInfo******', self.metaNodeInfo)
         } 
         else {
             if(!isMeta) {
-                metaType = self.core.getAttribute(self.core.getBase(root), 'name');
+                // metaType = self.core.getAttribute(self.core.getBase(root), 'name');  this is the base of pointers
+                metaType = self.core.getAttribute(self.core.getMetaType(root), 'name');
                 if(self.core.isConnection(root)) {
                     dstNode = self.core.getPointerPath(root, 'dst');
                     dstName = self.core.getAttribute(nodes[dstNode], 'name');
@@ -435,6 +489,9 @@ define([
                                             isMeta: isMeta,
                                             metaType: metaType,
                                             cap: capOfMetaNode,
+                                            pyfile: pyfileOfMetaNode,
+                                            pyfile_dir: pyfile_dirOfMetaNode,
+                                            path: pathOfMetaNode,
                                             children: children
                                             });
                 }
@@ -452,6 +509,9 @@ define([
                                             isMeta: isMeta,
                                             metaType: metaType,
                                             cap: capOfMetaNode,
+                                            pyfile: pyfileOfMetaNode,
+                                            pyfile_dir: pyfile_dirOfMetaNode,
+                                            path: pathOfMetaNode,
                                             children: children
                                             });
                 }
@@ -461,6 +521,9 @@ define([
                                             isMeta: isMeta,
                                             metaType: metaType,
                                             cap: capOfMetaNode,
+                                            pyfile: pyfileOfMetaNode,
+                                            pyfile_dir: pyfile_dirOfMetaNode,
+                                            path: pathOfMetaNode,
                                             children: children
                                             });
                 }
@@ -470,6 +533,9 @@ define([
                                             isMeta: isMeta,
                                             metaType: metaType,
                                             cap: capOfMetaNode,
+                                            pyfile: pyfileOfMetaNode,
+                                            pyfile_dir: pyfile_dirOfMetaNode,
+                                            path: pathOfMetaNode,
                                             children: children
                                             });
                 }
@@ -483,100 +549,6 @@ define([
             }
         }
  
-        return child;
-    };
-
-    MoleculeCodeGenerator.prototype.getNodeInfo = function (root, nodes, iter, indent) {
-        var self = this,
-            idOfMetaNode,
-            nameOfMetaNode,
-            isMeta,
-            metaType,
-            children = [],
-            childrenPaths,
-            childNode,
-            dstNode,
-            srcNode,
-            dstName,
-            srcName,
-            child={},
-            i;
-
-        indent = indent || '';
-
-        nameOfMetaNode = self.core.getAttribute(root, 'name');
-        idOfMetaNode = self.core.getRelid(root);
-        isMeta = self.core.isMetaNode(root);
-
-        childrenPaths = self.core.getChildrenPaths(root);
-        self.logger.info(indent, nameOfMetaNode, 'has', childrenPaths.length, 'children.');
-
-        for (i = 0; i < childrenPaths.length; i += 1) {
-            childNode = nodes[childrenPaths[i]];
-            children.push(self.getNodeInfo(childNode, nodes, iter + 1, indent + '  '));
-        }
-
-        if(iter == 1) {
-            child = ({name: nameOfMetaNode, children: children});
-            self.metaNodeInfo.push(child);
-        } 
-        else {
-            if(!isMeta) {
-                metaType = self.core.getAttribute(self.core.getBase(root), 'name');
-                if(self.core.isConnection(root)) {
-                    dstNode = self.core.getPointerPath(root, 'dst');
-                    dstName = self.core.getAttribute(nodes[dstNode], 'name');
-                    srcNode = self.core.getPointerPath(root, 'src');
-                    srcName = self.core.getAttribute(nodes[srcNode], 'name');
-                    child[idOfMetaNode] = ({name: nameOfMetaNode, isMeta: isMeta, metaType: metaType, src: srcName, dst: dstName});
-                } 
-                else {
-                    child[idOfMetaNode] = ({name: nameOfMetaNode, isMeta: isMeta, metaType: metaType, children: children});
-                }
-            } 
-            else {
-                metaType = nameOfMetaNode;
-                child[idOfMetaNode] = ({name: nameOfMetaNode, isMeta: isMeta, metaType: metaType, children: children});
-            }
-        }
- 
-        return child;
-    };
-
-    MoleculeCodeGenerator.prototype.getMetaNodes = function (root, nodes) {
-        var self = this,
-            childrenPaths,
-            childNode,
-            nameOfMetaNode,
-            pathOfMetaNode,
-            isMeta,
-            baseNode,
-            baseName,
-            child,
-            i;
-
-        nameOfMetaNode = self.core.getAttribute(root, 'name');
-        pathOfMetaNode = self.core.getPath(root);
-        isMeta = self.core.isMetaNode(root);
-        childrenPaths = self.core.getChildrenPaths(root);
-
-        for (i = 0; i < childrenPaths.length; i += 1) {
-            childNode = nodes[childrenPaths[i]];
-            self.getMetaNodes(childNode, nodes);
-        }
-
-        if(isMeta){
-            baseNode = self.core.getPointerPath(root,'base');
-            if(baseNode) {
-                baseName = self.core.getAttribute(nodes[baseNode], 'name');
-            }
-            else {
-                baseName = "null";
-            }
-            child = ({name: nameOfMetaNode, path:pathOfMetaNode, nbrOfChildren:childrenPaths.length, base: baseName});
-            self.metaNodes.push(child);
-        }
-
         return child;
     };
 
