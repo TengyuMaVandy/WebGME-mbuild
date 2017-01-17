@@ -16,6 +16,7 @@ define([
     'text!./Templates/methanepy.ejs',
     'text!./Templates/ch3py.ejs',
     'text!./Templates/ch2py.ejs',
+    'text!./Templates/silanepy.ejs',
     'text!./Templates/ethanepy.ejs',
     'text!./Templates/polymerpy.ejs',
     'text!./Templates/copolymerpy.ejs'
@@ -28,6 +29,7 @@ define([
     methanePyTemplate,
     ch3PyTemplate,
     ch2PyTemplate,
+    silanePyTemplate,
     ethanePyTemplate,
     polymerPyTemplate,
     copolymerPyTemplate) {
@@ -147,6 +149,10 @@ define([
                                     break;
                                 case '-CH2-':
                                     python_template = ch2PyTemplate;
+                                    template_flag = true;
+                                    break;
+                                case '-Silane-':
+                                    python_template = silanePyTemplate;
                                     template_flag = true;
                                     break;
                                 default:

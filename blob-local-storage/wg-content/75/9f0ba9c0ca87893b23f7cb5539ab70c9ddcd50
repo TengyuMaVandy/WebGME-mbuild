@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"C","location":[1.734723475976807e-17,-1.3877787807814457e-16,2.5587171270657905e-16]},{"element":"H","location":[1.0999999940395357,-2.8898199739842755e-16,6.984369528175717e-17]},{"element":"H","location":[-1.0999999940395357,1.1426241242138404e-17,4.4189973013140095e-16]},{"element":"Si","location":[-9.429003315048204e-18,-0.7000000000000002,-7.25244865036827e-18]},{"element":"O","location":[-1.3073040437212877,-0.7000000000000005,1.6386390642112516e-16]},{"element":"H","location":[-1.6344719849511316,-0.7316406983028411,-0.6710000336170197]},{"element":"O","location":[1.4501705776846618,-0.8509242671205969,-2.369471174113843e-16]},{"element":"H","location":[1.8179490456194067,-0.7682855121120719,0.8020000159740449]},{"element":"C","location":[0.0,0.0,0.0]},{"element":"H","location":[1.0699999332427979,0.0,0.0]},{"element":"H","location":[-0.35700008273124695,0.7690000534057617,0.6530000269412994]},{"element":"H","location":[-0.35700008273124695,0.18100008368492126,-0.9929999709129333]},{"element":"C","location":[-8.673617379884035e-18,1.3999999999999995,6.591949208711867e-16]},{"element":"H","location":[1.0699999332427979,1.4,4.2831756504555555e-16]},{"element":"H","location":[-0.35700008273124684,2.1690000534057607,0.6530000269413005]},{"element":"H","location":[-0.3570000827312473,1.5810000836849214,-0.9929999709129328]}],"bonds":[{"atoms":[15,12],"order":1},{"atoms":[10,8],"order":1},{"atoms":[9,8],"order":1},{"atoms":[8,3],"order":1},{"atoms":[1,0],"order":1},{"atoms":[6,3],"order":1},{"atoms":[11,8],"order":1},{"atoms":[13,12],"order":1},{"atoms":[5,4],"order":1},{"atoms":[14,12],"order":1},{"atoms":[4,3],"order":1},{"atoms":[3,0],"order":1},{"atoms":[7,6],"order":1},{"atoms":[2,0],"order":1},{"atoms":[0,12],"order":1}],"name":"Copolymer"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>

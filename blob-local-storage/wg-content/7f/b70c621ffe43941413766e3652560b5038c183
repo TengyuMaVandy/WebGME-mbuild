@@ -1,0 +1,215 @@
+{
+    "name": "-Silane-",
+    "metaType": "Molecule",
+    "children": {
+        "B": {
+            "name": "Anchor",
+            "isMeta": false,
+            "metaType": "Anchor",
+            "src": "Port",
+            "dst": "S"
+        },
+        "A": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "S",
+            "dst": "OH-"
+        },
+        "m": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "S",
+            "dst": "-OH"
+        },
+        "a": {
+            "name": "Anchor",
+            "isMeta": false,
+            "metaType": "Anchor",
+            "src": "Port",
+            "dst": "S"
+        },
+        "U": {
+            "name": "S",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/1/U",
+            "children": {}
+        },
+        "c": {
+            "name": "OH-",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Molecule",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/1/c",
+            "children": {
+                "9": {
+                    "name": "O",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "pyfile_dir": "",
+                    "path": "/v/p/1/c/9",
+                    "children": {}
+                },
+                "c": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "pyfile_dir": "",
+                    "path": "/v/p/1/c/c",
+                    "children": {}
+                },
+                "J": {
+                    "name": "Port",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                },
+                "B": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "O",
+                    "dst": "H"
+                },
+                "v": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "O",
+                    "dst": "Port"
+                }
+            }
+        },
+        "b": {
+            "name": "-OH",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Molecule",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/1/b",
+            "children": {
+                "9": {
+                    "name": "O",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "pyfile_dir": "",
+                    "path": "/v/p/1/b/9",
+                    "children": {}
+                },
+                "c": {
+                    "name": "H",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Atom",
+                    "cap": "none",
+                    "pyfile": "",
+                    "pyfile_dir": "",
+                    "path": "/v/p/1/b/c",
+                    "children": {}
+                },
+                "J": {
+                    "name": "Port",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                },
+                "B": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "O",
+                    "dst": "H"
+                },
+                "v": {
+                    "name": "Bond",
+                    "isMeta": false,
+                    "metaType": "Bond",
+                    "src": "O",
+                    "dst": "Port"
+                }
+            }
+        },
+        "g": {
+            "name": "Port",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        },
+        "M": {
+            "name": "Port",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        }
+    },
+    "length": 1,
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/p/1"
+}

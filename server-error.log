@@ -4097,3 +4097,100 @@ NameError: name 'Port2Port' is not defined
 2017-01-17T02:47:14.908Z - error: [gme:server:worker:simpleworker:pid_548:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
 2017-01-17T02:47:14.909Z - error: [gme:server:worker:simpleworker:pid_548:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
 2017-01-17T02:47:14.910Z - error: [gme:server:worker:simpleworker:pid_548:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Bond  &&&&&&&&&&
+2017-01-17T03:33:06.967Z - error: [gme:server:worker:simpleworker:pid_11768:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-17T03:33:07.189Z - error: [gme:server:worker:simpleworker:pid_11768:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Anchor  &&&&&&&&&&
+2017-01-17T03:33:07.191Z - error: [gme:server:worker:simpleworker:pid_11768:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Bond  &&&&&&&&&&
+2017-01-17T03:33:07.196Z - error: [gme:server:worker:simpleworker:pid_11768:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:33:07.591Z - error: [gme:server:worker:simpleworker:pid_11768:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] Error: Command failed: "E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\Fx1JG\_Silane_.py
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\Fx1JG\_Silane_.py", line 23
+    ch2 = CH2()
+      ^
+IndentationError: expected an indented block
+ `"E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\Fx1JG\_Silane_.py` (exited with error code 1)
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Socket.<anonymous> (internal/child_process.js:334:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at Pipe._handle.close [as _onclose] (net.js:498:12)
+2017-01-17T03:33:07.593Z - error: [gme:server:worker:simpleworker:pid_11768:WorkerFunctions] plugin [MoleculeCodeGenerator] failed with error Error: Command failed: "E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\Fx1JG\_Silane_.py
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\Fx1JG\_Silane_.py", line 23
+    ch2 = CH2()
+      ^
+IndentationError: expected an indented block
+ `"E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\Fx1JG\_Silane_.py` (exited with error code 1)
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Socket.<anonymous> (internal/child_process.js:334:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at Pipe._handle.close [as _onclose] (net.js:498:12)
+2017-01-17T03:34:40.203Z - error: [gme:server:worker:simpleworker:pid_10464:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-17T03:34:40.402Z - error: [gme:server:worker:simpleworker:pid_10464:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Anchor  &&&&&&&&&&
+2017-01-17T03:34:40.404Z - error: [gme:server:worker:simpleworker:pid_10464:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Bond  &&&&&&&&&&
+2017-01-17T03:34:40.408Z - error: [gme:server:worker:simpleworker:pid_10464:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:36:54.774Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-17T03:36:55.031Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Bond  &&&&&&&&&&
+2017-01-17T03:36:55.034Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:36:55.035Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Anchor  &&&&&&&&&&
+2017-01-17T03:36:55.037Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:36:55.040Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:36:56.748Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] Error: Command failed: "E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\CH3_Silane_CH2_CH3.py
+Traceback (most recent call last):
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\CH3_Silane_CH2_CH3.py", line 113, in <module>
+    cap_front = CH3()
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\_CH3.py", line 10, in __init__
+    mb.load('E:\\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\Templates\lib\moieties\ch3.pdb', compound=self, relative_to_module=self.__module__)
+  File "e:\users\tengyuma\imodels\mbuild\mbuild\compound.py", line 58, in load
+    traj = md.load(filename, **kwargs)
+  File "E:\Program Files\Anaconda3\envs\iModels\lib\site-packages\mdtraj\core\trajectory.py", line 424, in load
+    _assert_files_exist(filename_or_filenames)
+  File "E:\Program Files\Anaconda3\envs\iModels\lib\site-packages\mdtraj\core\trajectory.py", line 99, in _assert_files_exist
+    raise IOError('No such file: %s' % fn)
+OSError: No such file: E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\Templates\lib\moieties\ch3.pdb
+ `"E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\CH3_Silane_CH2_CH3.py` (exited with error code 1)
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Socket.<anonymous> (internal/child_process.js:334:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at Pipe._handle.close [as _onclose] (net.js:498:12)
+2017-01-17T03:36:56.751Z - error: [gme:server:worker:simpleworker:pid_14328:WorkerFunctions] plugin [MoleculeCodeGenerator] failed with error Error: Command failed: "E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\CH3_Silane_CH2_CH3.py
+Traceback (most recent call last):
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\CH3_Silane_CH2_CH3.py", line 113, in <module>
+    cap_front = CH3()
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\_CH3.py", line 10, in __init__
+    mb.load('E:\\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\Templates\lib\moieties\ch3.pdb', compound=self, relative_to_module=self.__module__)
+  File "e:\users\tengyuma\imodels\mbuild\mbuild\compound.py", line 58, in load
+    traj = md.load(filename, **kwargs)
+  File "E:\Program Files\Anaconda3\envs\iModels\lib\site-packages\mdtraj\core\trajectory.py", line 424, in load
+    _assert_files_exist(filename_or_filenames)
+  File "E:\Program Files\Anaconda3\envs\iModels\lib\site-packages\mdtraj\core\trajectory.py", line 99, in _assert_files_exist
+    raise IOError('No such file: %s' % fn)
+OSError: No such file: E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\Templates\lib\moieties\ch3.pdb
+ `"E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\tMgZX\CH3_Silane_CH2_CH3.py` (exited with error code 1)
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Socket.<anonymous> (internal/child_process.js:334:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at Pipe._handle.close [as _onclose] (net.js:498:12)
+2017-01-17T03:38:48.646Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-17T03:38:48.886Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Bond  &&&&&&&&&&
+2017-01-17T03:38:48.889Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:38:48.890Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Anchor  &&&&&&&&&&
+2017-01-17T03:38:48.900Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T03:38:48.904Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T04:04:12.288Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-17T04:04:12.448Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Anchor  &&&&&&&&&&
+2017-01-17T04:04:12.449Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T04:04:12.449Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-17T04:04:12.450Z - error: [gme:server:worker:simpleworker:pid_10300:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Bond  &&&&&&&&&&

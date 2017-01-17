@@ -1,14 +1,38 @@
-<% var j = 0, name = molecule.name%>
+<%
+var name = molecule.name
+var visited_node = new Set()
+var meta_type = ['Atom', 'Molecule', 'Polymer', 'Copolymer']
+var cap_front = ''
+var main_chain = ''
+var cap_end = ''
+var length = 1
+%>
+import itertools as it
+from numpy.random import permutation
+
 from mbuild.compound import Compound
 from mbuild.coordinate_transform import equivalence_transform
 from mbuild.utils.validation import assert_port_exists
 from mbuild import clone
+<% for(var i in molecule.children) {
+if(meta_type.indexOf(molecule.children[i].metaType) != -1 && !visited_node.has(molecule.children[i].name)) {%>
+from <%=molecule.children[i].name.replace(/-/g, '_')%> import <%=molecule.children[i].name.replace(/-/g, '')%><%
+    visited_node.add(molecule.children[i].name)
+}
+    if(meta_type.indexOf(molecule.children[i].metaType) != -1) {
+        if (molecule.children[i].cap == 'front') {
+            cap_front = molecule.children[i].name.replace(/-/g, '')
+        }
+        else if (molecule.children[i].cap == 'end') {
+            cap_end = molecule.children[i].name.replace(/-/g, '')
+        }
+        else {
+            main_chain = molecule.children[i].name.replace(/-/g, '')
+            length = molecule.children[i].length
+        }
+    }
+} %>
 
-from mbuild.lib.moieties import CH2, CH3
-from mbuild.lib.moieties import Silane
-
-import itertools
-from numpy.random import permutation
 
 __all__ = ['Copolymer']
 
@@ -71,7 +95,7 @@ class MainChain(Compound):
             cap_front = CH3()
             cap_end = CH3()
             monomer_A = [CH2(), ("up", "down")] * 2
-            monomer_B = [Silane(), "up", "down"] * 2
+            monomer_B = [Silane(), ("up", "down")] * 2
             pattern = [cap_front, [monomer_A, monomer_B] * 2, cap_end]
 
         # delete cap_front and cap_end, so we only get the main_chain
