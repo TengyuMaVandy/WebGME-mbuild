@@ -226,10 +226,20 @@ define([
                         example_node = nodes[obj['path']];
                         var base_node = self.core.getBase(example_node);
                         self.logger.info('########## set pyfile_dir attribute for ', example, ' ##########');
+
+                        var file_hash = self.blobClient.putFile(example_py, examplePY);
+                        self.logger.info('##########', file_hash, '##########');
+
                         if (self.core.getAttribute(example_node, 'name') == self.core.getAttribute(base_node, 'name')) {
+                            self.logger.info('########## set pyfile attribute for ', example, ' ##########');
+                            self.core.setAttribute(base_node, 'pyfile', file_hash);
+
                             self.core.setAttribute(base_node, 'pyfile_dir', lib_path);
                         }
                         else {
+                            self.logger.info('########## set pyfile attribute for ', example, ' ##########');
+                            self.core.setAttribute(example_node, 'pyfile', file_hash);
+
                             self.core.setAttribute(example_node, 'pyfile_dir', lib_path);
                         }
                         template_flag = false
