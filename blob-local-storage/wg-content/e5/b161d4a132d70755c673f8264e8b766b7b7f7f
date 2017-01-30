@@ -1,0 +1,33 @@
+{
+    "name": "Tiled_Beta_Cristobalite",
+    "metaType": "Tiled_Compound",
+    "children": {
+        "y": {
+            "name": "Beta_Cristobalite",
+            "isMeta": false,
+            "metaType": "Surface",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/5/Q/y",
+            "n_tiles": [
+                1,
+                1,
+                1
+            ],
+            "children": {}
+        }
+    },
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        1,
+        1,
+        1
+    ],
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/5/Q"
+}

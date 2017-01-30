@@ -1,0 +1,8 @@
+{
+    "name": "Amorphous_Silica",
+    "metaType": "Surface",
+    "children": {},
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Surface\\amorphous_silica.py",
+    "path": "/v/B/b"
+}

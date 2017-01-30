@@ -1,0 +1,77 @@
+{
+    "name": "Alkane",
+    "metaType": "Polymer",
+    "children": {
+        "1": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH3",
+            "dst": "CH2"
+        },
+        "J": {
+            "name": "CH2",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+            "path": "/v/0/x/u/J",
+            "children": {}
+        },
+        "x": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "front",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/0/x/u/x",
+            "children": {}
+        },
+        "f": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH2",
+            "dst": "Down"
+        },
+        "n": {
+            "name": "Down",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        }
+    },
+    "length": 1,
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        null,
+        null,
+        null
+    ],
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Polymer\\Alkane.py",
+    "path": "/v/0/x/u",
+    "isPort": false
+}

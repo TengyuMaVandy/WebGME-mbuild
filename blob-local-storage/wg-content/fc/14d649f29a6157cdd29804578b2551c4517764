@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"C","location":[-1.033895191682177e-14,-11.200000000000001,-3.829402073218802e-15]},{"element":"H","location":[-1.0999999940395457,-11.2,-2.362986149548781e-15]},{"element":"H","location":[1.0999999940395253,-11.200000000000003,-5.295817996888822e-15]},{"element":"C","location":[-7.082538007709568e-15,-9.800000000000002,-2.6326384539034983e-15]},{"element":"H","location":[-1.0999999940395424,-9.799999999999999,-1.237440544127688e-15]},{"element":"H","location":[1.0999999940395286,-9.800000000000004,-4.027836363679308e-15]},{"element":"Si","location":[-4.147047941653075e-15,-8.400000000000002,-1.5789895213562816e-15]},{"element":"O","location":[1.3073040437212842,-8.400000000000006,-2.837767646942558e-15]},{"element":"H","location":[1.6344719849511269,-8.368359301697163,-0.671000033617023]},{"element":"O","location":[-1.4501705776846658,-8.249075732879401,-9.125436308611621e-17]},{"element":"H","location":[-1.8179490456194096,-8.331714487887925,0.8020000159740452]},{"element":"Si","location":[-1.6886068314902024e-15,-7.000000000000002,-5.079933540492948e-16]},{"element":"O","location":[1.307304043721286,-7.0000000000000036,-2.093557837140917e-15]},{"element":"H","location":[1.6344719849511289,-6.968359301697164,-0.6710000336170224]},{"element":"O","location":[-1.4501705776846627,-6.849075732879401,1.3914083415969085e-15]},{"element":"H","location":[-1.8179490456194067,-6.931714487887925,0.8020000159740466]},{"element":"C","location":[2.4074361849974293e-16,-5.600000000000001,4.806034481487937e-16]},{"element":"H","location":[-1.0999999940395353,-5.6,1.3384921870590281e-15]},{"element":"H","location":[1.0999999940395355,-5.600000000000003,-3.772852907614408e-16]},{"element":"C","location":[1.0425238091047647e-15,-4.2,9.054151206544218e-16]},{"element":"H","location":[-1.0999999940395346,-4.199999999999999,1.169735445054176e-15]},{"element":"H","location":[1.0999999940395369,-4.200000000000001,6.410947962546675e-16]},{"element":"Si","location":[1.211129930978246e-15,-2.8000000000000016,7.794520895374126e-16]},{"element":"O","location":[1.3073040437212888,-2.8000000000000016,4.750565863481783e-16]},{"element":"H","location":[1.6344719849511327,-2.768359301697163,-0.6710000336170198]},{"element":"O","location":[-1.4501705776846607,-2.6490757328794023,1.0760510054072252e-15]},{"element":"H","location":[-1.817949045619405,-2.7317144878879276,0.8020000159740465]},{"element":"Si","location":[6.684994277012402e-16,-1.4000000000000012,3.152179806049281e-16]},{"element":"O","location":[1.3073040437212888,-1.4000000000000001,9.664401788460627e-16]},{"element":"H","location":[1.6344719849511327,-1.3683593016971607,-0.6710000336170188]},{"element":"O","location":[-1.4501705776846616,-1.2490757328794044,-4.748579189073898e-16]},{"element":"H","location":[-1.8179490456194065,-1.3317144878879306,0.8020000159740444]},{"element":"C","location":[0.0,0.0,0.0]},{"element":"H","location":[1.0699999332427979,0.0,0.0]},{"element":"H","location":[-0.35700008273124695,0.7690000534057617,0.6530000269412994]},{"element":"H","location":[-0.35700008273124695,0.18100008368492126,-0.9929999709129333]},{"element":"C","location":[-1.5118115093137874e-14,-12.600000000000001,-5.555451931815725e-15]},{"element":"H","location":[-1.0699999332428132,-12.599999999999998,-2.6560806759006845e-15]},{"element":"H","location":[0.3570000827312302,-13.369000053405767,0.6530000269412918]},{"element":"H","location":[0.3570000827312284,-12.781000083684923,-0.9929999709129405]}],"bonds":[{"atoms":[7,6],"order":1},{"atoms":[4,3],"order":1},{"atoms":[24,23],"order":1},{"atoms":[5,3],"order":1},{"atoms":[1,0],"order":1},{"atoms":[31,30],"order":1},{"atoms":[35,32],"order":1},{"atoms":[18,16],"order":1},{"atoms":[27,22],"order":1},{"atoms":[17,16],"order":1},{"atoms":[13,12],"order":1},{"atoms":[6,3],"order":1},{"atoms":[2,0],"order":1},{"atoms":[15,14],"order":1},{"atoms":[22,19],"order":1},{"atoms":[20,19],"order":1},{"atoms":[25,22],"order":1},{"atoms":[0,36],"order":1},{"atoms":[23,22],"order":1},{"atoms":[37,36],"order":1},{"atoms":[33,32],"order":1},{"atoms":[3,0],"order":1},{"atoms":[19,16],"order":1},{"atoms":[8,7],"order":1},{"atoms":[30,27],"order":1},{"atoms":[32,27],"order":1},{"atoms":[10,9],"order":1},{"atoms":[28,27],"order":1},{"atoms":[11,6],"order":1},{"atoms":[39,36],"order":1},{"atoms":[29,28],"order":1},{"atoms":[12,11],"order":1},{"atoms":[34,32],"order":1},{"atoms":[21,19],"order":1},{"atoms":[9,6],"order":1},{"atoms":[16,11],"order":1},{"atoms":[14,11],"order":1},{"atoms":[26,25],"order":1},{"atoms":[38,36],"order":1}],"name":"Copolymer"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<%
+var name = molecule.name.replace(/-/g, '')
+var ch2_pdb = 'E:\\\\Users\\TengyuMa\\WebGME\\WebGME-mbuild\\src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Molecule\\ch2.pdb'
+%>
+# -- ==ch2== --
+import mbuild as mb
+
+
+class <%=name%>(mb.Compound):
+    def __init__(self):
+        super(<%=name%>, self).__init__()
+
+        mb.load('<%=ch2_pdb%>', compound=self, relative_to_module=self.__module__)
+        mb.translate(self, -self[0].pos)  # Move carbon to origin.
+
+        self.add(mb.Port(anchor=self[0]), 'up')
+        self.add(mb.Port(anchor=self[0]), 'down')
+        <% for(var i in molecule.children) {%><%
+        if(molecule.children[i].metaType == 'Port' && molecule.children[i].name == 'Up')
+        {%>
+        mb.translate(self['up'], [<%= molecule.children[i].pos%>])<%
+            } %><%
+        if(molecule.children[i].metaType == 'Port' && molecule.children[i].name == 'Down')
+        {%>
+        mb.translate(self['down'], [<%= molecule.children[i].pos%>])<%
+            } %><%
+        } %>
+
+if __name__ == "__main__":
+    ch2 = CH2()
+    tempdir = ch2.visualize(show_ports=False)
+    print(tempdir)

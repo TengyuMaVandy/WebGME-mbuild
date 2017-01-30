@@ -1,0 +1,27 @@
+
+# -- ==methane== --
+
+import mbuild as mb
+
+
+class Methane(mb.Compound):
+    def __init__(self):
+        super(Methane, self).__init__()
+        
+        self.add(mb.Particle(name='C', pos=[0,0,0]))
+        
+        self.add(mb.Particle(name='H', pos=[0,0.1,0.07]))
+        self.add(mb.Particle(name='H', pos=[0.1,0,-0.07]))
+        self.add(mb.Particle(name='H', pos=[0,-0.1,0.07]))
+        self.add(mb.Particle(name='H', pos=[-0.1,0,-0.07]))
+            
+        
+        self.add_bond((self[0], self[1]))
+        self.add_bond((self[0], self[2]))
+        self.add_bond((self[0], self[3]))
+        self.add_bond((self[0], self[4]))
+        
+if __name__ == "__main__":
+    methane = Methane()
+    tempdir = methane.visualize(show_ports=True)
+    print(tempdir)

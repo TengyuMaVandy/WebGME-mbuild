@@ -1,0 +1,95 @@
+{
+    "name": "CH3-CH2-Silane-CH3",
+    "metaType": "Copolymer",
+    "children": {
+        "5": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "front",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/7/u/5",
+            "children": {}
+        },
+        "G": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "end",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/7/u/G",
+            "children": {}
+        },
+        "M": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH3",
+            "dst": "CH2"
+        },
+        "d": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "Silane",
+            "dst": "CH3"
+        },
+        "Q": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH2",
+            "dst": "Silane"
+        },
+        "p": {
+            "name": "CH2",
+            "length": 2,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+            "path": "/v/7/u/p",
+            "children": {}
+        },
+        "b": {
+            "name": "Silane",
+            "length": 2,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\silane.py",
+            "path": "/v/7/u/b",
+            "children": {}
+        }
+    },
+    "length": 2,
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/7/u"
+}

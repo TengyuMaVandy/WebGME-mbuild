@@ -1,0 +1,59 @@
+<%
+var name = molecule.name
+var visited_node = new Set()
+var meta_type = ['Atom', 'Moiety', 'Bulk_Material', 'Surface', 'Polymer', 'Copolymer', 'Arbitrary']
+%>
+# -- ==arbitrary compound== --
+import mbuild as mb
+
+<% for(var i in molecule.children) {
+    if(meta_type.indexOf(molecule.children[i].metaType) != -1 && !visited_node.has(molecule.children[i].name)) {%>
+from <%=molecule.children[i].name.replace(/-/g, '_')%> import <%=molecule.children[i].name.replace(/-/g, '')%><%
+    visited_node.add(molecule.children[i].name)
+    }
+}%>
+
+
+class <%=name%>(mb.Compound):
+    """Generate all the instances of children based on the metaType they are.
+    Connect all the instances based on the connections between each pair of them.
+    Finally, describe a completed arbitrary compound. : P awesome!!!
+    """
+    def __init__(self):
+        super(<%=name%>, self).__init__()
+
+        # Add all Compounds
+    <% for(var i in molecule.children) {
+        if(meta_type.indexOf(molecule.children[i].metaType) != -1) {%>
+        <%=molecule.children[i].name.replace(/-/g, '_').toLowerCase()%> = <%=molecule.children[i].name.replace(/-/g, '')%>()
+        self.add(<%=molecule.children[i].name.replace(/-/g, '_').toLowerCase()%>, '<%=molecule.children[i].name.replace(/-/g, '_').toLowerCase()%>')
+        <%
+        }
+    }%>
+        # Add Equivalence to connect Compounds
+    <% for(var i in molecule.children) {
+        if(molecule.children[i].metaType == 'Equivalence') {%>
+        mb.equivalence_transform(self['<%=molecule.children[i].srcCompound.replace(/-/g, '_').toLowerCase()%>'], self['<%=molecule.children[i].srcCompound.replace(/-/g, '_').toLowerCase()%>']['<%=molecule.children[i].srcPort.toLowerCase()%>'], self['<%=molecule.children[i].dstCompound.replace(/-/g, '_').toLowerCase()%>']['<%=molecule.children[i].dstPort.toLowerCase()%>'])
+        <%
+        }
+    }%>
+        # Hoist Port to be exposed.
+    <% for(var i in molecule.children) {
+        if(molecule.children[i].metaType == 'Hoist') {%>
+        self.add(<%=molecule.children[i].srcCompound.replace(/-/g, '_').toLowerCase()%>['<%=molecule.children[i].srcPort.toLowerCase()%>'], '<%=molecule.children[i].dstPort.toLowerCase()%>', containment=False)
+        <%
+        }
+    }%>
+        #alkane = Alkane(chain_length, cap_end=False)
+        #self.add(alkane, 'alkane')
+        #silane = Silane()
+        #self.add(silane, 'silane')
+        #mb.equivalence_transform(self['alkane'], self['alkane']['down'], self['silane']['up'])
+
+        #self.add(silane['down'], 'down', containment=False)
+
+# -- ==arbitrary compound== --
+if __name__ == '__main__':
+    <%=name.toLowerCase()%> = <%=name%>()
+    tmpdir = <%=name.toLowerCase()%>.visualize()
+    print(tmpdir)

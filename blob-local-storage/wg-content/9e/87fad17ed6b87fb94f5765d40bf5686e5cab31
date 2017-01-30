@@ -1,0 +1,26 @@
+{
+    "name": "CH2*n",
+    "metaType": "Polymer",
+    "children": {
+        "O": {
+            "name": "CH2",
+            "length": 5,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+            "path": "/v/d/2/O",
+            "children": {}
+        }
+    },
+    "length": 1,
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/d/2"
+}

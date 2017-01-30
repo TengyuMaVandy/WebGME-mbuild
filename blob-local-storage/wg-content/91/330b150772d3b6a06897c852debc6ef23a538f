@@ -1,0 +1,113 @@
+{
+    "name": "Methane",
+    "metaType": "Molecule",
+    "children": {
+        "3": {
+            "name": "H",
+            "pos": [
+                0,
+                0.1,
+                0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/a/3",
+            "children": {}
+        },
+        "G": {
+            "name": "C",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/a/G",
+            "children": {}
+        },
+        "A": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "H",
+            "dst": "C"
+        },
+        "t": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "C",
+            "dst": "H"
+        },
+        "o": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "H",
+            "dst": "C"
+        },
+        "k": {
+            "name": "Bond",
+            "isMeta": false,
+            "metaType": "Bond",
+            "src": "H",
+            "dst": "C"
+        },
+        "O": {
+            "name": "H",
+            "pos": [
+                0.1,
+                0,
+                -0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/a/O",
+            "children": {}
+        },
+        "v": {
+            "name": "H",
+            "pos": [
+                0,
+                -0.1,
+                0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/a/v",
+            "children": {}
+        },
+        "F": {
+            "name": "H",
+            "pos": [
+                -0.1,
+                0,
+                -0.07
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "",
+            "path": "/v/p/a/F",
+            "children": {}
+        }
+    },
+    "length": 1,
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/p/a"
+}

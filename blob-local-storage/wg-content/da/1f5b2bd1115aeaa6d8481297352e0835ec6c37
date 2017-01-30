@@ -1,0 +1,8 @@
+{
+    "name": "Amorphous_Silica",
+    "metaType": "Bulk_Material",
+    "children": {},
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Bulk_Material\\amorphous_silica.py",
+    "path": "/v/6/O"
+}

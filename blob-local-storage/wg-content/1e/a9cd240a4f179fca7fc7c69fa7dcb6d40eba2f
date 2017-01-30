@@ -1,0 +1,264 @@
+{
+    "name": "Alkylsilane_Monolayer",
+    "metaType": "Monolayer",
+    "children": {
+        "1": {
+            "name": "Pattern",
+            "isMeta": false,
+            "metaType": "Pattern",
+            "pattern": "Random2DPattern",
+            "pattern_n": 20,
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Pattern\\Pattern.py",
+            "path": "/v/w/d/1",
+            "children": {}
+        },
+        "8": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "srcPort": "H",
+            "dstPort": "Pattern",
+            "srcCompound": "Alkylsilane_Monolayer",
+            "dstCompound": "Alkylsilane_Monolayer"
+        },
+        "j": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "srcPort": "Beta_Cristobalite",
+            "dstPort": "Pattern",
+            "srcCompound": "Alkylsilane_Monolayer",
+            "dstCompound": "Alkylsilane_Monolayer"
+        },
+        "J": {
+            "name": "Alkyl_Silane",
+            "isMeta": false,
+            "metaType": "Arbitrary",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Arbitrary\\Alkyl_Silane.py",
+            "path": "/v/w/d/J",
+            "children": {
+                "9": {
+                    "name": "Silane",
+                    "length": 1,
+                    "pos": [
+                        null,
+                        null,
+                        null
+                    ],
+                    "isMeta": false,
+                    "metaType": "Moiety",
+                    "cap": "none",
+                    "pyfile": "",
+                    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\silane.py",
+                    "path": "/v/w/d/J/9",
+                    "children": {
+                        "R": {
+                            "name": "Down",
+                            "pos": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "isMeta": false,
+                            "metaType": "Port"
+                        },
+                        "z": {
+                            "name": "Up",
+                            "pos": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "isMeta": false,
+                            "metaType": "Port"
+                        }
+                    }
+                },
+                "u": {
+                    "name": "Alkane",
+                    "length": 1,
+                    "isMeta": false,
+                    "metaType": "Polymer",
+                    "pyfile": "",
+                    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Polymer\\Alkane.py",
+                    "path": "/v/w/d/J/u",
+                    "children": {
+                        "1": {
+                            "name": "Equivalence",
+                            "isMeta": false,
+                            "metaType": "Equivalence",
+                            "srcPort": "CH3",
+                            "dstPort": "CH2",
+                            "srcCompound": "Alkane",
+                            "dstCompound": "Alkane"
+                        },
+                        "J": {
+                            "name": "CH2",
+                            "length": 10,
+                            "pos": [
+                                null,
+                                null,
+                                null
+                            ],
+                            "isMeta": false,
+                            "metaType": "Moiety",
+                            "cap": "none",
+                            "pyfile": "",
+                            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+                            "path": "/v/w/d/J/u/J",
+                            "children": {
+                                "vl": {
+                                    "name": "Down",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Port"
+                                },
+                                "mY": {
+                                    "name": "Up",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Port"
+                                }
+                            }
+                        },
+                        "x": {
+                            "name": "CH3",
+                            "length": 1,
+                            "pos": [
+                                null,
+                                null,
+                                null
+                            ],
+                            "isMeta": false,
+                            "metaType": "Moiety",
+                            "cap": "front",
+                            "pyfile": "",
+                            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+                            "path": "/v/w/d/J/u/x",
+                            "children": {
+                                "1": {
+                                    "name": "Up",
+                                    "pos": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "isMeta": false,
+                                    "metaType": "Port"
+                                }
+                            }
+                        },
+                        "f": {
+                            "name": "Equivalence",
+                            "isMeta": false,
+                            "metaType": "Equivalence",
+                            "srcPort": "CH2",
+                            "dstPort": "Down",
+                            "srcCompound": "Alkane",
+                            "dstCompound": "Alkane"
+                        },
+                        "n": {
+                            "name": "Down",
+                            "pos": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "isMeta": false,
+                            "metaType": "Port"
+                        }
+                    }
+                },
+                "H": {
+                    "name": "Equivalence",
+                    "isMeta": false,
+                    "metaType": "Equivalence",
+                    "srcPort": "Down",
+                    "dstPort": "Up",
+                    "srcCompound": "Alkane",
+                    "dstCompound": "Silane"
+                },
+                "v": {
+                    "name": "Hoist",
+                    "isMeta": false,
+                    "metaType": "Hoist",
+                    "srcPort": "Down",
+                    "dstPort": "Down",
+                    "srcCompound": "Silane"
+                },
+                "Z": {
+                    "name": "Down",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                }
+            }
+        },
+        "D": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "srcPort": "Down",
+            "dstPort": "Pattern",
+            "srcCompound": "Alkyl_Silane",
+            "dstCompound": "Alkylsilane_Monolayer"
+        },
+        "H": {
+            "name": "Beta_Cristobalite",
+            "isMeta": false,
+            "metaType": "Surface",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Surface\\Beta_Cristobalite.py",
+            "path": "/v/w/d/H",
+            "n_tiles": [
+                1,
+                1,
+                1
+            ],
+            "children": {}
+        },
+        "x": {
+            "name": "H",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Atom",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Atom\\h.py",
+            "path": "/v/w/d/x",
+            "children": {}
+        }
+    },
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        1,
+        1,
+        1
+    ],
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Monolayer\\Alkylsilane_Monolayer.py",
+    "path": "/v/w/d",
+    "isPort": false
+}

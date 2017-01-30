@@ -1,0 +1,82 @@
+{
+    "name": "Alkane",
+    "metaType": "Polymer",
+    "children": {
+        "1": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH3",
+            "dst": "CH2"
+        },
+        "J": {
+            "name": "CH2",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+            "path": "/v/d/l/J",
+            "children": {}
+        },
+        "x": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "front",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/d/l/x",
+            "children": {}
+        },
+        "Z": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "end",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/d/l/Z",
+            "children": {}
+        },
+        "O": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH2",
+            "dst": "CH3"
+        }
+    },
+    "length": 1,
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        null,
+        null,
+        null
+    ],
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/d/l"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Beta_Cristobalite",
+    "metaType": "Surface",
+    "children": {},
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Surface\\beta_cristobalite.py",
+    "path": "/v/B/R"
+}

@@ -1,0 +1,72 @@
+{
+    "name": "CH3-CH2*n-CH3",
+    "metaType": "Polymer",
+    "children": {
+        "D": {
+            "name": "CH2",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+            "path": "/v/d/w/D",
+            "children": {}
+        },
+        "A": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "end",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/d/w/A",
+            "children": {}
+        },
+        "R": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH3",
+            "dst": "CH2"
+        },
+        "O": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "src": "CH2",
+            "dst": "CH3"
+        },
+        "B": {
+            "name": "CH3",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "front",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch3.py",
+            "path": "/v/d/w/B",
+            "children": {}
+        }
+    },
+    "length": 1,
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/d/w"
+}
