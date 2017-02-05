@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"Si","location":[0.0,1.3877787807814457e-16,0.0]},{"element":"O","location":[1.3073040437212877,1.3877787807814457e-16,0.0]},{"element":"H","location":[1.6344719849511313,0.03164069830284097,-0.6710000336170197]},{"element":"O","location":[-1.4501705776846618,0.1509242671205971,0.0]},{"element":"H","location":[-1.8179490456194065,0.06828551211207179,0.8020000159740448]}],"bonds":[{"atoms":[3,0],"order":1},{"atoms":[1,0],"order":1},{"atoms":[4,3],"order":1},{"atoms":[1,2],"order":1}],"name":"Silane"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>

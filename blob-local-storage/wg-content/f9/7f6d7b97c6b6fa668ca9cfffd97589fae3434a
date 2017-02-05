@@ -1,0 +1,42 @@
+{
+    "name": "CH2",
+    "metaType": "Moiety",
+    "cap": "none",
+    "children": {
+        "vl": {
+            "name": "Down",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        },
+        "mY": {
+            "name": "Up",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        }
+    },
+    "length": 1,
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        null,
+        null,
+        null
+    ],
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+    "path": "/v/w/d/J/u/J",
+    "isPort": false
+}

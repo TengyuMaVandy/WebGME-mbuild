@@ -1,0 +1,104 @@
+{
+    "name": "CH2-Silane",
+    "metaType": "Copolymer",
+    "children": {
+        "g": {
+            "name": "Equivalence",
+            "isMeta": false,
+            "metaType": "Equivalence",
+            "srcPort": "Down",
+            "dstPort": "Up",
+            "srcCompound": "CH2",
+            "dstCompound": "Silane"
+        },
+        "D": {
+            "name": "CH2",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\ch2.py",
+            "path": "/v/7/p/D",
+            "children": {
+                "mY": {
+                    "name": "Up",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                },
+                "vl": {
+                    "name": "Down",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                }
+            }
+        },
+        "f": {
+            "name": "Silane",
+            "length": 1,
+            "pos": [
+                null,
+                null,
+                null
+            ],
+            "isMeta": false,
+            "metaType": "Moiety",
+            "cap": "none",
+            "pyfile": "",
+            "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\silane.py",
+            "path": "/v/7/p/f",
+            "children": {
+                "z": {
+                    "name": "Up",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                },
+                "R": {
+                    "name": "Down",
+                    "pos": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "isMeta": false,
+                    "metaType": "Port"
+                }
+            }
+        }
+    },
+    "length": 1,
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        null,
+        null,
+        null
+    ],
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Copolymer\\CH2_Silane.py",
+    "path": "/v/7/p",
+    "isPort": false
+}

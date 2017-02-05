@@ -1,0 +1,19 @@
+{
+    "name": "Beta_Cristobalite",
+    "metaType": "Surface",
+    "children": {},
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        2,
+        2,
+        1
+    ],
+    "pyfile": "",
+    "pyfile_dir": "",
+    "path": "/v/B/R",
+    "isPort": false
+}

@@ -10806,3 +10806,174 @@ AttributeError: type object 'Beta_Cristobalite' has no attribute 'name'
 2017-01-30T07:03:34.966Z - error: [gme:server:worker:simpleworker:pid_1964:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
 2017-01-30T07:03:34.969Z - error: [gme:server:worker:simpleworker:pid_1964:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
 2017-01-30T07:03:34.991Z - error: [gme:server:worker:simpleworker:pid_1964:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T09:00:59.061Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T10:21:23.841Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T10:21:23.964Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T10:21:24.032Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T10:21:24.035Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T10:21:24.066Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T10:30:31.254Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T10:30:31.411Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T10:30:31.426Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T10:30:31.429Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T10:30:31.452Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T11:01:40.478Z - error: [gme:server:worker:simpleworker:pid_5412:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:04:41.098Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:04:41.495Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:04:41.497Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:04:41.505Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T11:04:41.519Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T11:07:39.754Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:07:39.898Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:07:39.901Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:07:39.909Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T11:07:39.925Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T11:08:00.663Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:08:00.814Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:08:00.816Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:08:00.838Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T11:08:00.855Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T11:37:19.841Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:37:19.952Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:37:19.954Z - error: [gme:server:worker:simpleworker:pid_5148:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:38:25.485Z - error: [gme:server:worker:simpleworker:pid_2728:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:38:25.857Z - error: [gme:server:worker:simpleworker:pid_2728:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:38:25.859Z - error: [gme:server:worker:simpleworker:pid_2728:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:39:34.855Z - error: [gme:server:worker:simpleworker:pid_2728:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:39:34.966Z - error: [gme:server:worker:simpleworker:pid_2728:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:39:34.967Z - error: [gme:server:worker:simpleworker:pid_2728:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:40:14.123Z - error: [gme:server:worker:simpleworker:pid_12900:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:40:14.324Z - error: [gme:server:worker:simpleworker:pid_12900:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:40:14.325Z - error: [gme:server:worker:simpleworker:pid_12900:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:40:59.180Z - error: [gme:server:worker:simpleworker:pid_12900:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:40:59.278Z - error: [gme:server:worker:simpleworker:pid_12900:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:42:03.626Z - error: [gme:server:worker:simpleworker:pid_11388:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:42:03.852Z - error: [gme:server:worker:simpleworker:pid_11388:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:42:03.853Z - error: [gme:server:worker:simpleworker:pid_11388:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T11:42:03.872Z - error: [gme:server:worker:simpleworker:pid_11388:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T11:42:03.880Z - error: [gme:server:worker:simpleworker:pid_11388:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-01-30T11:43:57.604Z - error: [gme:server:worker:simpleworker:pid_10172:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:44:32.576Z - error: [gme:server:worker:simpleworker:pid_13012:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T11:47:06.998Z - error: [gme:server:worker:simpleworker:pid_5808:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T23:37:40.065Z - error: [gme:server:worker:simpleworker:pid_12784:WorkerFunctions] exportSelectionToFile failed with error CoreIllegalOperationError: Closure cannot be created due to [/v/w/d/x] misses its base [/v/K/C].
+    at CoreIllegalOperationError.Error (native)
+    at new CoreIllegalOperationError (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\CoreIllegalOperationError.js:11:27)
+    at Object.LibraryCore.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\librarycore.js:1181:31)
+    at CoreQ.Core.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\core.js:3755:25)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\server\worker\workerrequests.js:718:51
+    at _fulfilled (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:796:13)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:604:44
+    at runSingle (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:137:13)
+2017-01-30T23:38:57.632Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions] exportSelectionToFile failed with error CoreIllegalOperationError: Closure cannot be created due to [/v/0/x/u/J] misses its base [/v/N/1].
+    at CoreIllegalOperationError.Error (native)
+    at new CoreIllegalOperationError (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\CoreIllegalOperationError.js:11:27)
+    at Object.LibraryCore.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\librarycore.js:1181:31)
+    at CoreQ.Core.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\core.js:3755:25)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\server\worker\workerrequests.js:718:51
+    at _fulfilled (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:796:13)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:604:44
+    at runSingle (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:137:13)
+2017-01-30T23:39:02.323Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions] exportSelectionToFile failed with error CoreIllegalOperationError: Closure cannot be created due to [/v/0/x/u/J] misses its base [/v/N/1].
+    at CoreIllegalOperationError.Error (native)
+    at new CoreIllegalOperationError (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\CoreIllegalOperationError.js:11:27)
+    at Object.LibraryCore.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\librarycore.js:1181:31)
+    at CoreQ.Core.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\core.js:3755:25)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\server\worker\workerrequests.js:718:51
+    at _fulfilled (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:796:13)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:604:44
+    at runSingle (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:137:13)
+2017-01-30T23:41:02.881Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions] exportSelectionToFile failed with error CoreIllegalOperationError: Closure cannot be created due to [/v/x] misses its base [/v/N/1].
+    at CoreIllegalOperationError.Error (native)
+    at new CoreIllegalOperationError (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\CoreIllegalOperationError.js:11:27)
+    at Object.LibraryCore.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\librarycore.js:1181:31)
+    at CoreQ.Core.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\core.js:3755:25)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\server\worker\workerrequests.js:718:51
+    at _fulfilled (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:796:13)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:604:44
+    at runSingle (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:137:13)
+2017-01-30T23:41:50.845Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-30T23:41:51.133Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-30T23:41:51.148Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T23:41:51.150Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-30T23:42:40.050Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions] exportSelectionToFile failed with error CoreIllegalOperationError: Closure cannot be created due to [/v/w/d/x] misses its base [/v/K/C].
+    at CoreIllegalOperationError.Error (native)
+    at new CoreIllegalOperationError (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\CoreIllegalOperationError.js:11:27)
+    at Object.LibraryCore.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\librarycore.js:1181:31)
+    at CoreQ.Core.getClosureInformation (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\common\core\core.js:3755:25)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\server\worker\workerrequests.js:718:51
+    at _fulfilled (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:796:13)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:604:44
+    at runSingle (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:137:13)
+2017-01-31T00:39:31.297Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-01-31T00:39:31.515Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-01-31T00:39:31.526Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-31T00:39:31.528Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-01-31T00:39:31.567Z - error: [gme:server:worker:simpleworker:pid_2784:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-02-01T05:40:29.755Z - error: [gme:server:standalone] Failed to start server port=8888, code=EADDRINUSE, errno=EADDRINUSE, syscall=listen, address=::, port=8888
+2017-02-01T05:40:29.759Z - error: [gme:server:standalone] Error at server start Error: listen EADDRINUSE :::8888
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at Server._listen2 (net.js:1259:14)
+    at listen (net.js:1295:10)
+    at Server.listen (net.js:1391:5)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\webgme\src\server\standalone.js:228:30
+    at _fulfilled (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:796:13)
+    at E:\Users\TengyuMa\WebGME\WebGME-mbuild\node_modules\q\q.js:556:49
+2017-02-01T16:06:05.613Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-02-01T16:06:05.958Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-02-01T16:06:06.000Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-02-01T16:06:06.002Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-02-01T16:06:06.043Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-02-01T16:10:53.551Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] This is an error message.
+2017-02-01T16:10:53.755Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Equivalence  &&&&&&&&&&
+2017-02-01T16:10:53.769Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-02-01T16:10:53.770Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Port  &&&&&&&&&&
+2017-02-01T16:10:53.778Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] &&&&&&&&&& didn't find:  Hoist  &&&&&&&&&&
+2017-02-01T16:10:58.461Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions:PluginManagerBase:plugin:MoleculeCodeGenerator] Error: Command failed: "E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py
+Traceback (most recent call last):
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py", line 41, in <module>
+    arbitrary_test = Arbitrary_Test()
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py", line 23, in __init__
+    self.add(alkyl_silane, 'alkyl_silane')
+  File "e:\users\tengyuma\imodels\mbuild\mbuild\compound.py", line 299, in add
+    label, self))
+mbuild.exceptions.MBuildError: Label "alkyl_silane" already exists in <Arbitrary_Test 78 particles, non-periodic, 76 bonds, id: 6962648>.
+ `"E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py` (exited with error code 1)
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Socket.<anonymous> (internal/child_process.js:334:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at Pipe._handle.close [as _onclose] (net.js:498:12)
+2017-02-01T16:10:58.461Z - error: [gme:server:worker:simpleworker:pid_10432:WorkerFunctions] plugin [MoleculeCodeGenerator] failed with error Error: Command failed: "E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py
+Traceback (most recent call last):
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py", line 41, in <module>
+    arbitrary_test = Arbitrary_Test()
+  File "E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py", line 23, in __init__
+    self.add(alkyl_silane, 'alkyl_silane')
+  File "e:\users\tengyuma\imodels\mbuild\mbuild\compound.py", line 299, in add
+    label, self))
+mbuild.exceptions.MBuildError: Label "alkyl_silane" already exists in <Arbitrary_Test 78 particles, non-periodic, 76 bonds, id: 6962648>.
+ `"E:\Program Files\Anaconda3\envs\iModels\python.exe" E:\Users\TengyuMa\WebGME\WebGME-mbuild\src\plugins\MoleculeCodeGenerator\example\iVT1H\2_Alkyl_Silane.py` (exited with error code 1)
+    at ChildProcess.exithandler (child_process.js:206:12)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Socket.<anonymous> (internal/child_process.js:334:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at Pipe._handle.close [as _onclose] (net.js:498:12)

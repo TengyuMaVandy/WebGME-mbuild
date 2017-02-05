@@ -1,0 +1,42 @@
+{
+    "name": "Silane",
+    "metaType": "Moiety",
+    "cap": "none",
+    "children": {
+        "R": {
+            "name": "Down",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        },
+        "z": {
+            "name": "Up",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "isMeta": false,
+            "metaType": "Port"
+        }
+    },
+    "length": 1,
+    "pos": [
+        null,
+        null,
+        null
+    ],
+    "n_tiles": [
+        null,
+        null,
+        null
+    ],
+    "pyfile": "",
+    "pyfile_dir": "src\\plugins\\MoleculeCodeGenerator\\Templates\\lib\\Moiety\\silane.py",
+    "path": "/v/w/d/J/9",
+    "isPort": false
+}

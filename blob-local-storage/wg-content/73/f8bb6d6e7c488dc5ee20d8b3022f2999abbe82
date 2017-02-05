@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>imolecule</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        <link href="chosen.css" rel="stylesheet" type="text/css" />
+        <link href="server.css" rel="stylesheet" type="text/css" />
+
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="chosen.jquery.min.js" type="text/javascript"></script>
+
+        <script src="imolecule.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                imolecule.create("#imolecule");
+
+                imolecule.addElements({});
+
+                imolecule.draw({"atoms":[{"element":"Si","location":[0.0,1.3877787807814457e-16,0.0]},{"element":"O","location":[1.3073040437212877,1.3877787807814457e-16,0.0]},{"element":"H","location":[1.6344719849511313,0.03164069830284097,-0.6710000336170197]},{"element":"O","location":[-1.4501705776846618,0.1509242671205971,0.0]},{"element":"H","location":[-1.8179490456194065,0.06828551211207179,0.8020000159740448]},{"element":"C","location":[-1.6216222202491823e-15,1.399999999999999,-2.4997886251238115e-16]},{"element":"H","location":[-1.0999999940395369,1.3999999999999968,-1.5060038881682268e-15]},{"element":"H","location":[1.0999999940395335,1.4000000000000012,1.0060461631434645e-15]},{"element":"C","location":[-4.826522767189678e-15,2.799999999999998,-7.887824704970136e-16]},{"element":"H","location":[-1.09999999403954,2.799999999999996,-2.116025510047069e-15]},{"element":"H","location":[1.0999999940395302,2.8000000000000003,5.384605690530419e-16]},{"element":"C","location":[-8.352347157185883e-15,4.199999999999999,-1.4707007652497327e-15]},{"element":"H","location":[-1.0999999940395437,4.199999999999995,-3.1339727038988407e-15]},{"element":"H","location":[1.099999994039527,4.200000000000001,1.925711733993733e-16]},{"element":"C","location":[-1.235522050307571e-14,5.599999999999998,-2.1352718252426857e-15]},{"element":"H","location":[-1.099999994039547,5.599999999999996,-3.5235771308162526e-15]},{"element":"H","location":[1.0999999940395224,5.600000000000001,-7.469665196691188e-16]},{"element":"C","location":[-1.6887184509138464e-14,6.999999999999998,-2.882242250344537e-15]},{"element":"H","location":[-1.099999994039552,6.999999999999995,-4.746794460760168e-15]},{"element":"H","location":[1.099999994039518,7.000000000000002,-1.0176900399289072e-15]},{"element":"C","location":[-2.254671877458614e-14,8.4,-4.192997805138853e-15]},{"element":"H","location":[-1.099999994039558,8.399999999999995,-6.651118430064962e-15]},{"element":"H","location":[1.0999999940395129,8.400000000000004,-1.7348771802127436e-15]},{"element":"C","location":[-2.883942710876534e-14,9.799999999999997,-6.0545280635558045e-15]},{"element":"H","location":[-1.099999994039564,9.799999999999994,-8.520842633328293e-15]},{"element":"H","location":[1.0999999940395062,9.800000000000002,-3.5882134937833155e-15]},{"element":"C","location":[-3.584337206809505e-14,11.199999999999996,-8.254329399788236e-15]},{"element":"H","location":[-1.0999999940395713,11.199999999999992,-1.152472582865546e-14]},{"element":"H","location":[1.0999999940394996,11.200000000000003,-4.98393297092101e-15]},{"element":"C","location":[-4.305548384454196e-14,12.599999999999998,-1.0345710518772116e-14]},{"element":"H","location":[-1.0999999940395782,12.599999999999994,-1.2877517505007242e-14]},{"element":"H","location":[1.099999994039492,12.600000000000001,-7.813903532536989e-15]},{"element":"C","location":[-4.9478296439419435e-14,14.0,-1.176054948212504e-14]},{"element":"H","location":[-1.0999999940395848,13.999999999999995,-1.3668070484868194e-14]},{"element":"H","location":[1.099999994039486,14.000000000000004,-9.853028479381887e-15]},{"element":"C","location":[-5.521624824034177e-14,15.4,-1.2555061157382141e-14]},{"element":"H","location":[1.0699999332427421,15.400000000000006,-1.0885517568377282e-14]},{"element":"H","location":[-0.3570000827313061,16.16900005340576,0.6530000269412861]},{"element":"H","location":[-0.3570000827313009,15.58100008368492,-0.9929999709129466]}],"bonds":[{"atoms":[15,14],"order":1},{"atoms":[3,4],"order":1},{"atoms":[12,11],"order":1},{"atoms":[3,0],"order":1},{"atoms":[38,35],"order":1},{"atoms":[21,20],"order":1},{"atoms":[0,5],"order":1},{"atoms":[30,29],"order":1},{"atoms":[34,32],"order":1},{"atoms":[11,8],"order":1},{"atoms":[28,26],"order":1},{"atoms":[22,20],"order":1},{"atoms":[27,26],"order":1},{"atoms":[26,23],"order":1},{"atoms":[33,32],"order":1},{"atoms":[7,5],"order":1},{"atoms":[32,29],"order":1},{"atoms":[1,2],"order":1},{"atoms":[35,32],"order":1},{"atoms":[6,5],"order":1},{"atoms":[16,14],"order":1},{"atoms":[8,5],"order":1},{"atoms":[13,11],"order":1},{"atoms":[37,35],"order":1},{"atoms":[14,11],"order":1},{"atoms":[29,26],"order":1},{"atoms":[19,17],"order":1},{"atoms":[10,8],"order":1},{"atoms":[20,17],"order":1},{"atoms":[9,8],"order":1},{"atoms":[17,14],"order":1},{"atoms":[24,23],"order":1},{"atoms":[1,0],"order":1},{"atoms":[36,35],"order":1},{"atoms":[18,17],"order":1},{"atoms":[31,29],"order":1},{"atoms":[23,20],"order":1},{"atoms":[25,23],"order":1}],"name":"Alkyl_Silane"});
+
+                imolecule.setCameraType("perspective");
+                imolecule.setDrawingType("ball and stick");
+                imolecule.setShader("lambert");
+            });
+
+            var onCameraType = function () {
+                imolecule.setCameraType($("#camera-type").find(":selected").text());
+            };
+
+            var onDrawingType = function () {
+                imolecule.setDrawingType($("#drawing-types").find(":selected").text());
+            };
+
+            var onShader = function () {
+                imolecule.setShader($("#shaders").find(":selected").text());
+            };
+        </script>
+    </head>
+    <body>
+        <div id="imolecule">
+            <article id="options">
+                <select id="camera-type" onchange="javascript:onCameraType();">
+                    <option>perspective</option>
+                    <option>orthographic</option>
+                </select>
+
+                <select id="drawing-types" onchange="javascript:onDrawingType();">
+                    <option>ball and stick</option>
+                    <option>space filling</option>
+                    <option>wireframe</option>
+                </select>
+
+                <select id="shaders" onchange="javascript:onShader();">
+                    <option>lambert</option>
+                    <option>basic</option>
+                    <option>phong</option>
+                    <option>toon</option>
+                </select>
+            </article>
+        </div>
+    </body>
+</html>
